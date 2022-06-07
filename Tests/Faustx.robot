@@ -13,3 +13,7 @@ ${SITE_URL} =    https://www.faustx.com/en/
 
 All users must be enter site
     Common.Open FaustX Website    ${SITE_URL}
+
+User should be able to navigate through all dropdown menus
+    Common.Open FaustX Website    ${SITE_URL}
+    FaustxWeb.About us section

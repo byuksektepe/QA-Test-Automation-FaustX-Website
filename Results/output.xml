@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220608 02:07:24.916" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220608 02:29:17.849" rpa="false" schemaversion="3">
 <suite id="s1" name="Faustx" source="C:\Users\byuks\Desktop\QA-Test-Automation-FaustX-Website\tests\Faustx.robot">
 <test id="s1-t1" name="All users must be enter site" line="14">
 <kw name="Start FaustX Web Test" library="Common" type="SETUP">
@@ -8,52 +8,125 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220608 02:07:25.098" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220608 02:07:25.098" endtime="20220608 02:07:26.148"/>
+<msg timestamp="20220608 02:29:18.040" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220608 02:29:18.040" endtime="20220608 02:29:19.097"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220608 02:07:26.148" endtime="20220608 02:07:26.264"/>
+<status status="PASS" starttime="20220608 02:29:19.097" endtime="20220608 02:29:19.213"/>
 </kw>
-<status status="PASS" starttime="20220608 02:07:25.097" endtime="20220608 02:07:26.265"/>
+<status status="PASS" starttime="20220608 02:29:18.039" endtime="20220608 02:29:19.213"/>
 </kw>
 <kw name="Open FaustX Website" library="Common">
 <arg>${SITE_URL}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220608 02:07:26.266" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
-<status status="PASS" starttime="20220608 02:07:26.265" endtime="20220608 02:07:28.367"/>
+<msg timestamp="20220608 02:29:19.214" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220608 02:29:19.214" endtime="20220608 02:29:21.351"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>id=preloader</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220608 02:29:21.351" endtime="20220608 02:29:21.823"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>class=logo</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 02:07:28.367" endtime="20220608 02:07:28.421"/>
+<status status="PASS" starttime="20220608 02:29:21.823" endtime="20220608 02:29:21.840"/>
 </kw>
-<status status="PASS" starttime="20220608 02:07:26.265" endtime="20220608 02:07:28.421"/>
+<status status="PASS" starttime="20220608 02:29:19.214" endtime="20220608 02:29:21.840"/>
 </kw>
 <kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220608 02:07:28.422" endtime="20220608 02:07:30.517"/>
+<status status="PASS" starttime="20220608 02:29:21.841" endtime="20220608 02:29:23.913"/>
 </kw>
-<status status="PASS" starttime="20220608 02:07:28.422" endtime="20220608 02:07:30.518"/>
+<status status="PASS" starttime="20220608 02:29:21.841" endtime="20220608 02:29:23.913"/>
 </kw>
-<status status="PASS" starttime="20220608 02:07:25.097" endtime="20220608 02:07:30.518"/>
+<status status="PASS" starttime="20220608 02:29:18.038" endtime="20220608 02:29:23.914"/>
 </test>
-<status status="PASS" starttime="20220608 02:07:24.918" endtime="20220608 02:07:30.519"/>
+<test id="s1-t2" name="User should be able to navigate through all dropdown menus" line="17">
+<kw name="Start FaustX Web Test" library="Common" type="SETUP">
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220608 02:29:23.916" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220608 02:29:23.916" endtime="20220608 02:29:24.979"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220608 02:29:24.979" endtime="20220608 02:29:25.103"/>
+</kw>
+<status status="PASS" starttime="20220608 02:29:23.915" endtime="20220608 02:29:25.104"/>
+</kw>
+<kw name="Open FaustX Website" library="Common">
+<arg>${SITE_URL}</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220608 02:29:25.105" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220608 02:29:25.104" endtime="20220608 02:29:27.198"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>id=preloader</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220608 02:29:27.198" endtime="20220608 02:29:27.661"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>class=logo</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220608 02:29:27.661" endtime="20220608 02:29:27.679"/>
+</kw>
+<status status="PASS" starttime="20220608 02:29:25.104" endtime="20220608 02:29:27.679"/>
+</kw>
+<kw name="About us section" library="FaustxWeb">
+<kw name="Click about us section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${ABOUT_US_SECTION}</arg>
+<arg>About Us</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220608 02:29:27.680" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a' contains exact text 'About Us'.</msg>
+<status status="PASS" starttime="20220608 02:29:27.680" endtime="20220608 02:29:27.700"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ABOUT_US_SECTION}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 02:29:27.700" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220608 02:29:27.700" endtime="20220608 02:29:27.984"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ABOUT_US_WAIT_DROPDOWN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220608 02:29:27.985" endtime="20220608 02:29:28.222"/>
+</kw>
+<status status="PASS" starttime="20220608 02:29:27.679" endtime="20220608 02:29:28.223"/>
+</kw>
+<status status="PASS" starttime="20220608 02:29:27.679" endtime="20220608 02:29:28.223"/>
+</kw>
+<kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220608 02:29:28.223" endtime="20220608 02:29:30.320"/>
+</kw>
+<status status="PASS" starttime="20220608 02:29:28.223" endtime="20220608 02:29:30.320"/>
+</kw>
+<status status="PASS" starttime="20220608 02:29:23.915" endtime="20220608 02:29:30.320"/>
+</test>
+<status status="PASS" starttime="20220608 02:29:17.851" endtime="20220608 02:29:30.321"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Faustx">Faustx</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Faustx">Faustx</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220608 02:07:25.095" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA-Test-Automation-FaustX-Website\Resources\FaustxWeb.robot' is empty.</msg>
 </errors>
 </robot>
