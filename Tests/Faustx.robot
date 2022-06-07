@@ -10,3 +10,6 @@ ${BROWSER} =    chrome
 ${SITE_URL} =    https://www.faustx.com/en/
 
 *** Test Cases ***
+
+All users must be enter site
+    Common.Open FaustX Website    ${SITE_URL}
