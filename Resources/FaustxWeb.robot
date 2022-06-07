@@ -8,4 +8,5 @@ Resource    ./PO/Faustx/Navbar.robot
 *** Keywords ***
 About us section
     Navbar.Click about us section
+    Navbar.Click in order about us elements
 
