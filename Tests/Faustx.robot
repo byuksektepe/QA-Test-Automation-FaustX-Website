@@ -16,7 +16,10 @@ All users must be enter site
     Common.Open FaustX Website    ${SITE_URL}
 
 User should be able to navigate through all dropdown menus
+    [Documentation]    Dropdown Menu Tests
     [Tags]    Regression    Navbar Dropdown Menus
     Common.Open FaustX Website    ${SITE_URL}
-    FaustxWeb.About us section
-    FaustxWeb.What we do section
+
+    FaustxWeb."About us" section
+    FaustxWeb."What we do" section
+    FaustxWeb."Our future" section

@@ -21,6 +21,11 @@ Click what we do section
     Click Element    ${DROPDOWN_SECTION}\[3]/a
     Wait Until Element Is Visible   ${DROPDOWN_CONTENT}\(1)
 
+Click our future section
+    Element Text Should Be    ${DROPDOWN_SECTION}\[4]/a    Our Future
+    Click Element    ${DROPDOWN_SECTION}\[4]/a
+    Wait Until Element Is Visible   ${DROPDOWN_CONTENT}\(1)
+
 Click in order dropdown elements
     [Arguments]    ${ORDER_MAX_RANGE}    ${SET_CLICK_VAR}
     FOR  ${i}  IN RANGE  1   ${ORDER_MAX_RANGE}
@@ -28,7 +33,6 @@ Click in order dropdown elements
         Click Element  ${DROPDOWN_CONTENT}\(${i})
         Run Keyword    ${SET_CLICK_VAR}
     END
-    sleep    1s
     END
 
 
