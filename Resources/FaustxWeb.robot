@@ -24,3 +24,6 @@ Begin "Our Future" section
 Begin "Contact" section
     Navbar.Click contact section
 
+Begin "Homepage" section
+    Navbar.click homepage section
+

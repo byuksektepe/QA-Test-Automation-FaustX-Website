@@ -1,4 +1,5 @@
 *** Settings ***
+Library    Dialogs
 Resource    ../Resources/Common.robot
 Resource    ../Resources/FaustxWeb.robot
 
@@ -16,7 +17,7 @@ All users must be enter site
     Common.Open FaustX Website    ${SITE_URL}
 
 User should be able to navigate through all dropdown menus
-    [Documentation]    Dropdown Menu Tests
+    [Documentation]    Navbar Menu Tests
     [Tags]    Regression    Navbar Dropdown Menus
     Common.Open FaustX Website    ${SITE_URL}
 
@@ -24,3 +25,5 @@ User should be able to navigate through all dropdown menus
     FaustxWeb.Begin "What We Do" section
     FaustxWeb.Begin "Our Future" section
     FaustxWeb.Begin "Contact" section
+    FaustxWeb.Begin "Homepage" section
+    Pause Execution
