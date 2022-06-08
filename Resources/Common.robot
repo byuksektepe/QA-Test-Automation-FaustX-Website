@@ -2,19 +2,20 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-
+${PRELOADER} =    id=preloader
+${FX_LOGO} =    class=logo
 
 *** Keywords ***
 Start FaustX Web Test
-    [Arguments]    ${BROWSER}
+    [Arguments]     ${BROWSER}
     Open Browser    about:blank    ${BROWSER}
     Maximize Browser Window
 
 Open FaustX Website
     [Arguments]    ${SITE_URL}
-    Go To    ${SITE_URL}
-    Wait Until Element Is Not Visible    id=preloader
-    Wait Until Element Is Visible    class=logo
+    Go To          ${SITE_URL}
+    Wait Until Element Is Not Visible    ${PRELOADER}
+    Wait Until Element Is Visible        ${FX_LOGO}
 
 
 End FaustX Web Test
