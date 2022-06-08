@@ -26,13 +26,17 @@ Click our future section
     Click Element    ${DROPDOWN_SECTION}\[4]/a
     Wait Until Element Is Visible   ${DROPDOWN_CONTENT}\(1)
 
+Click contact section
+    Element Text Should Be    ${DROPDOWN_SECTION}\[5]/a    Contact
+    Click Element    ${DROPDOWN_SECTION}\[5]/a
+
 Click in order dropdown elements
     [Arguments]    ${ORDER_MAX_RANGE}    ${SET_CLICK_VAR}
     FOR  ${i}  IN RANGE  1   ${ORDER_MAX_RANGE}
-    IF   ${i} != 5
-        Click Element  ${DROPDOWN_CONTENT}\(${i})
-        Run Keyword    ${SET_CLICK_VAR}
-    END
+        IF   ${i} != 5
+            Click Element  ${DROPDOWN_CONTENT}\(${i})
+            Run Keyword    ${SET_CLICK_VAR}
+        END
     END
 
 

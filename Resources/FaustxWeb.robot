@@ -21,3 +21,6 @@ Begin "Our Future" section
     Navbar.Click our future section
     Navbar.Click in order dropdown elements     3    ${SET_CLICK_VAR}
 
+Begin "Contact" section
+    Navbar.Click contact section
+

@@ -23,3 +23,4 @@ User should be able to navigate through all dropdown menus
     FaustxWeb.Begin "About Us" section
     FaustxWeb.Begin "What We Do" section
     FaustxWeb.Begin "Our Future" section
+    FaustxWeb.Begin "Contact" section
