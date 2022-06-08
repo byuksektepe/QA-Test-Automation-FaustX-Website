@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220608 23:08:27.022" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220608 23:54:20.474" rpa="false" schemaversion="3">
 <suite id="s1" name="Faustx" source="C:\Users\byuks\Desktop\QA-Test-Automation-FaustX-Website\tests\Faustx.robot">
 <test id="s1-t1" name="Main slider should be move and display correct image" line="37">
 <kw name="Start FaustX Web Test" library="Common" type="SETUP">
@@ -8,143 +8,191 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220608 23:08:27.235" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220608 23:08:27.235" endtime="20220608 23:08:28.307"/>
+<msg timestamp="20220608 23:54:20.689" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220608 23:54:20.688" endtime="20220608 23:54:21.749"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220608 23:08:28.307" endtime="20220608 23:08:28.421"/>
+<status status="PASS" starttime="20220608 23:54:21.750" endtime="20220608 23:54:21.886"/>
 </kw>
-<status status="PASS" starttime="20220608 23:08:27.235" endtime="20220608 23:08:28.422"/>
+<status status="PASS" starttime="20220608 23:54:20.688" endtime="20220608 23:54:21.886"/>
 </kw>
 <kw name="Open FaustX Website" library="Common">
 <arg>${SITE_URL}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220608 23:08:28.423" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
-<status status="PASS" starttime="20220608 23:08:28.423" endtime="20220608 23:08:31.300"/>
+<msg timestamp="20220608 23:54:21.887" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220608 23:54:21.887" endtime="20220608 23:54:23.974"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id=preloader</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20220608 23:08:31.300" endtime="20220608 23:08:31.760"/>
+<status status="PASS" starttime="20220608 23:54:23.974" endtime="20220608 23:54:24.429"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>class=logo</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 23:08:31.760" endtime="20220608 23:08:31.778"/>
+<status status="PASS" starttime="20220608 23:54:24.430" endtime="20220608 23:54:24.447"/>
 </kw>
-<status status="PASS" starttime="20220608 23:08:28.422" endtime="20220608 23:08:31.778"/>
+<status status="PASS" starttime="20220608 23:54:21.887" endtime="20220608 23:54:24.447"/>
 </kw>
 <kw name="Main Slider" library="FaustxWeb">
 <kw name="Verify Page Loaded" library="Homepage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${NEXT_BUTTON}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 23:08:31.779" endtime="20220608 23:08:31.797"/>
+<status status="PASS" starttime="20220608 23:54:24.448" endtime="20220608 23:54:24.465"/>
 </kw>
-<status status="PASS" starttime="20220608 23:08:31.779" endtime="20220608 23:08:31.797"/>
+<status status="PASS" starttime="20220608 23:54:24.448" endtime="20220608 23:54:24.465"/>
 </kw>
 <kw name="Main slider movement" library="Homepage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${NEXT_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 23:08:31.797" level="INFO">Clicking element 'class=swiper-button-next'.</msg>
-<status status="PASS" starttime="20220608 23:08:31.797" endtime="20220608 23:08:31.963"/>
+<msg timestamp="20220608 23:54:24.466" level="INFO">Clicking element 'class=swiper-button-next'.</msg>
+<status status="PASS" starttime="20220608 23:54:24.465" endtime="20220608 23:54:24.630"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220608 23:08:32.977" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220608 23:08:31.964" endtime="20220608 23:08:32.977"/>
+<msg timestamp="20220608 23:54:25.644" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220608 23:54:24.631" endtime="20220608 23:54:25.644"/>
 </kw>
-<kw name="Check slider two content" library="Homepage">
-<kw name="Set Global Variable" library="BuiltIn">
-<arg>${S_NUM}</arg>
-<arg>3</arg>
-<doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20220608 23:08:32.978" level="INFO">${S_NUM} = 3</msg>
-<status status="PASS" starttime="20220608 23:08:32.978" endtime="20220608 23:08:32.978"/>
-</kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${SLIDER_CONTENT}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220608 23:08:33.307" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220608 23:08:33.308" level="FAIL">The element 'xpath=/html/body/header/div[1]/div/div/div[2]/div/div/div/h1' should be visible, but it is not.</msg>
-<status status="FAIL" starttime="20220608 23:08:32.979" endtime="20220608 23:08:33.309"/>
-</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>Check slider content</arg>
+<arg>2</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Check slider content" library="Homepage">
+<arg>2</arg>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${SLIDER_CONTENT}</arg>
-<arg>FX-FCP</arg>
+<arg>${SLIDER_NUMBER}</arg>
+<arg>${NUM}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" starttime="20220608 23:08:33.309" endtime="20220608 23:08:33.309"/>
+<msg timestamp="20220608 23:54:25.645" level="INFO">Verifying element 'css=body &gt; header &gt; div.swiper-pagination.custom-font.swiper-pagination-fraction &gt; span.swiper-pagination-current' contains exact text '2'.</msg>
+<status status="PASS" starttime="20220608 23:54:25.645" endtime="20220608 23:54:25.666"/>
 </kw>
-<status status="FAIL" starttime="20220608 23:08:32.977" endtime="20220608 23:08:33.310"/>
+<status status="PASS" starttime="20220608 23:54:25.644" endtime="20220608 23:54:25.666"/>
+</kw>
+<status status="PASS" starttime="20220608 23:54:25.644" endtime="20220608 23:54:25.666"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${NEXT_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220608 23:08:33.310" endtime="20220608 23:08:33.310"/>
+<msg timestamp="20220608 23:54:25.666" level="INFO">Clicking element 'class=swiper-button-next'.</msg>
+<status status="PASS" starttime="20220608 23:54:25.666" endtime="20220608 23:54:25.694"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220608 23:08:33.310" endtime="20220608 23:08:33.310"/>
+<msg timestamp="20220608 23:54:26.699" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220608 23:54:25.694" endtime="20220608 23:54:26.699"/>
 </kw>
-<kw name="Check slider one content" library="Homepage">
-<status status="NOT RUN" starttime="20220608 23:08:33.310" endtime="20220608 23:08:33.310"/>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>Check slider content</arg>
+<arg>1</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Check slider content" library="Homepage">
+<arg>1</arg>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${SLIDER_NUMBER}</arg>
+<arg>${NUM}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220608 23:54:26.700" level="INFO">Verifying element 'css=body &gt; header &gt; div.swiper-pagination.custom-font.swiper-pagination-fraction &gt; span.swiper-pagination-current' contains exact text '1'.</msg>
+<status status="PASS" starttime="20220608 23:54:26.700" endtime="20220608 23:54:26.712"/>
+</kw>
+<status status="PASS" starttime="20220608 23:54:26.699" endtime="20220608 23:54:26.712"/>
+</kw>
+<status status="PASS" starttime="20220608 23:54:26.699" endtime="20220608 23:54:26.712"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${PREV_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220608 23:08:33.310" endtime="20220608 23:08:33.310"/>
+<msg timestamp="20220608 23:54:26.713" level="INFO">Clicking element 'class=swiper-button-prev'.</msg>
+<status status="PASS" starttime="20220608 23:54:26.712" endtime="20220608 23:54:26.753"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220608 23:08:33.311" endtime="20220608 23:08:33.311"/>
+<msg timestamp="20220608 23:54:27.760" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220608 23:54:26.754" endtime="20220608 23:54:27.760"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>Check slider content</arg>
+<arg>2</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Check slider content" library="Homepage">
+<arg>2</arg>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${SLIDER_NUMBER}</arg>
+<arg>${NUM}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220608 23:54:27.761" level="INFO">Verifying element 'css=body &gt; header &gt; div.swiper-pagination.custom-font.swiper-pagination-fraction &gt; span.swiper-pagination-current' contains exact text '2'.</msg>
+<status status="PASS" starttime="20220608 23:54:27.761" endtime="20220608 23:54:27.773"/>
+</kw>
+<status status="PASS" starttime="20220608 23:54:27.760" endtime="20220608 23:54:27.773"/>
+</kw>
+<status status="PASS" starttime="20220608 23:54:27.760" endtime="20220608 23:54:27.773"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${PREV_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220608 23:08:33.311" endtime="20220608 23:08:33.311"/>
+<msg timestamp="20220608 23:54:27.773" level="INFO">Clicking element 'class=swiper-button-prev'.</msg>
+<status status="PASS" starttime="20220608 23:54:27.773" endtime="20220608 23:54:27.801"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220608 23:08:33.311" endtime="20220608 23:08:33.311"/>
+<msg timestamp="20220608 23:54:28.815" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220608 23:54:27.801" endtime="20220608 23:54:28.815"/>
 </kw>
-<status status="FAIL" starttime="20220608 23:08:31.797" endtime="20220608 23:08:33.311"/>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>Check slider content</arg>
+<arg>1</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Check slider content" library="Homepage">
+<arg>1</arg>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${SLIDER_NUMBER}</arg>
+<arg>${NUM}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220608 23:54:28.816" level="INFO">Verifying element 'css=body &gt; header &gt; div.swiper-pagination.custom-font.swiper-pagination-fraction &gt; span.swiper-pagination-current' contains exact text '1'.</msg>
+<status status="PASS" starttime="20220608 23:54:28.816" endtime="20220608 23:54:28.830"/>
 </kw>
-<status status="FAIL" starttime="20220608 23:08:31.779" endtime="20220608 23:08:33.312"/>
+<status status="PASS" starttime="20220608 23:54:28.815" endtime="20220608 23:54:28.830"/>
+</kw>
+<status status="PASS" starttime="20220608 23:54:28.815" endtime="20220608 23:54:28.830"/>
+</kw>
+<status status="PASS" starttime="20220608 23:54:24.465" endtime="20220608 23:54:28.831"/>
+</kw>
+<status status="PASS" starttime="20220608 23:54:24.448" endtime="20220608 23:54:28.831"/>
 </kw>
 <kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220608 23:08:33.313" endtime="20220608 23:08:35.407"/>
+<status status="PASS" starttime="20220608 23:54:28.832" endtime="20220608 23:54:30.937"/>
 </kw>
-<status status="PASS" starttime="20220608 23:08:33.313" endtime="20220608 23:08:35.407"/>
+<status status="PASS" starttime="20220608 23:54:28.831" endtime="20220608 23:54:30.937"/>
 </kw>
 <doc>Homepage Main Slider Tests</doc>
 <tag>Homepage</tag>
 <tag>Main Slider</tag>
 <tag>Regression</tag>
-<status status="FAIL" starttime="20220608 23:08:27.234" endtime="20220608 23:08:35.408">The element 'xpath=/html/body/header/div[1]/div/div/div[2]/div/div/div/h1' should be visible, but it is not.</status>
+<status status="PASS" starttime="20220608 23:54:20.687" endtime="20220608 23:54:30.938"/>
 </test>
-<status status="FAIL" starttime="20220608 23:08:27.023" endtime="20220608 23:08:35.409"/>
+<status status="PASS" starttime="20220608 23:54:20.475" endtime="20220608 23:54:30.939"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">Homepage</stat>
-<stat pass="0" fail="1" skip="0">Main Slider</stat>
-<stat pass="0" fail="1" skip="0">Regression</stat>
+<stat pass="1" fail="0" skip="0">Homepage</stat>
+<stat pass="1" fail="0" skip="0">Main Slider</stat>
+<stat pass="1" fail="0" skip="0">Regression</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Faustx">Faustx</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Faustx">Faustx</stat>
 </suite>
 </statistics>
 <errors>
