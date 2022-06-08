@@ -33,3 +33,10 @@ User should be able to navigate through all footer links
 
     Common.Open FaustX Website    ${SITE_URL}
     FaustxWeb.Begin "Footer" area
+
+Main slider should be move and display correct image
+    [Documentation]         Homepage Main Slider Tests
+    [Tags]    Regression    Homepage    Main Slider
+
+    Common.Open FaustX Website    ${SITE_URL}
+    FaustxWeb.Main Slider

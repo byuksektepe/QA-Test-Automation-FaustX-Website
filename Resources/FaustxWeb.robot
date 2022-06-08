@@ -2,6 +2,7 @@
 Library    SeleniumLibrary
 Resource    ./PO/Faustx/Navbar.robot
 Resource    ./PO/Faustx/Footer.robot
+Resource    ./PO/Faustx/Homepage.robot
 
 *** Variables ***
 
@@ -34,3 +35,12 @@ Begin "Homepage" section
 Begin "Footer" area
     Footer.Scroll to footer
     Click in order footer links    8
+
+
+# Homepage Tests
+Main Slider
+    Homepage.Verify Page Loaded
+    Homepage.Main slider movement
+
+
+
