@@ -5,4 +5,4 @@
  ![Git](https://img.shields.io/badge/GIT-000000?style=for-the-badge&logo=git&logoColor=white)
  ![ChromeDriver](https://img.shields.io/badge/Google_chrome-000000?style=for-the-badge&logo=Google-chrome&logoColor=white)
  
- <p>A real world QA Test Automation Project for FaustX's Official Website, wiretten with Robot Framework @SeleniumLibrary. Includes clean file architecture, easy-to-read log file keywords and OOP.</p>
+ <p>A real world QA Test Automation Project for FaustX's Official Website, wiretten with Robot Framework @SeleniumLibrary. Includes clean file architecture, easy-to-read log file keywords, easy-to-maintain code and OOP.</p>
