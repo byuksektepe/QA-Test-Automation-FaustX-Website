@@ -12,8 +12,11 @@ ${SITE_URL} =    https://www.faustx.com/en/
 *** Test Cases ***
 
 All users must be enter site
+    [Tags]    Smoke    Enter Site
     Common.Open FaustX Website    ${SITE_URL}
 
 User should be able to navigate through all dropdown menus
+    [Tags]    Smoke    Navbar Dropdown Menus
     Common.Open FaustX Website    ${SITE_URL}
     FaustxWeb.About us section
+    FaustxWeb.What we do section
