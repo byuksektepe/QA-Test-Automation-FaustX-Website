@@ -33,3 +33,4 @@ Begin "Homepage" section
 # Footer Tests
 Begin "Footer" area
     Footer.Scroll to footer
+    Click in order footer links    8

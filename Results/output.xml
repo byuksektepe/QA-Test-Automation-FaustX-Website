@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220608 20:21:50.413" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220608 20:48:19.524" rpa="false" schemaversion="3">
 <suite id="s1" name="Faustx" source="C:\Users\byuks\Desktop\QA-Test-Automation-FaustX-Website\tests\Faustx.robot">
 <test id="s1-t1" name="User should be able to navigate through all footer links" line="30">
 <kw name="Start FaustX Web Test" library="Common" type="SETUP">
@@ -8,65 +8,305 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220608 20:21:50.640" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220608 20:21:50.640" endtime="20220608 20:21:51.727"/>
+<msg timestamp="20220608 20:48:19.721" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220608 20:48:19.721" endtime="20220608 20:48:20.786"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220608 20:21:51.727" endtime="20220608 20:21:51.850"/>
+<status status="PASS" starttime="20220608 20:48:20.787" endtime="20220608 20:48:20.918"/>
 </kw>
-<status status="PASS" starttime="20220608 20:21:50.640" endtime="20220608 20:21:51.850"/>
+<status status="PASS" starttime="20220608 20:48:19.721" endtime="20220608 20:48:20.918"/>
 </kw>
 <kw name="Open FaustX Website" library="Common">
 <arg>${SITE_URL}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220608 20:21:51.854" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
-<status status="PASS" starttime="20220608 20:21:51.853" endtime="20220608 20:21:53.988"/>
+<msg timestamp="20220608 20:48:20.919" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220608 20:48:20.919" endtime="20220608 20:48:23.034"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id=preloader</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20220608 20:21:53.989" endtime="20220608 20:21:54.455"/>
+<status status="PASS" starttime="20220608 20:48:23.034" endtime="20220608 20:48:23.487"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>class=logo</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 20:21:54.455" endtime="20220608 20:21:54.473"/>
+<status status="PASS" starttime="20220608 20:48:23.488" endtime="20220608 20:48:23.505"/>
 </kw>
-<status status="PASS" starttime="20220608 20:21:51.851" endtime="20220608 20:21:54.473"/>
+<status status="PASS" starttime="20220608 20:48:20.918" endtime="20220608 20:48:23.505"/>
 </kw>
 <kw name="Begin &quot;Footer&quot; area" library="FaustxWeb">
 <kw name="Scroll to footer" library="Footer">
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>css=body &gt; div.main-content &gt; footer</arg>
+<arg>${LOCATE_FOOTER}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220608 20:21:54.474" endtime="20220608 20:21:54.752"/>
+<status status="PASS" starttime="20220608 20:48:23.506" endtime="20220608 20:48:23.787"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220608 20:48:23.787" endtime="20220608 20:48:23.801"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:23.506" endtime="20220608 20:48:23.801"/>
+</kw>
+<kw name="Click in order footer links" library="Footer">
+<arg>8</arg>
+<for flavor="IN">
+<var>${fl}</var>
+<value>@{FOOTER_LINKS}</value>
+<iter>
+<var name="${fl}">- Our Vision</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220608 20:48:23.802" level="INFO">Clicking link '- Our Vision'.</msg>
+<status status="PASS" starttime="20220608 20:48:23.802" endtime="20220608 20:48:25.523"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220608 20:48:25.523" endtime="20220608 20:48:25.893"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220608 20:48:25.893" endtime="20220608 20:48:25.907"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:25.523" endtime="20220608 20:48:25.908"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>3s</arg>
+<arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220608 20:21:57.761" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220608 20:21:54.752" endtime="20220608 20:21:57.761"/>
+<msg timestamp="20220608 20:48:27.916" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220608 20:48:25.908" endtime="20220608 20:48:27.916"/>
 </kw>
-<status status="PASS" starttime="20220608 20:21:54.474" endtime="20220608 20:21:57.761"/>
+<status status="PASS" starttime="20220608 20:48:23.801" endtime="20220608 20:48:27.916"/>
+</iter>
+<iter>
+<var name="${fl}">- News</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220608 20:48:27.916" level="INFO">Clicking link '- News'.</msg>
+<status status="PASS" starttime="20220608 20:48:27.916" endtime="20220608 20:48:27.957"/>
 </kw>
-<status status="PASS" starttime="20220608 20:21:54.473" endtime="20220608 20:21:57.761"/>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220608 20:48:27.958" endtime="20220608 20:48:28.243"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220608 20:48:28.243" endtime="20220608 20:48:28.259"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:27.958" endtime="20220608 20:48:28.259"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220608 20:48:30.265" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220608 20:48:28.259" endtime="20220608 20:48:30.265"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:27.916" endtime="20220608 20:48:30.265"/>
+</iter>
+<iter>
+<var name="${fl}">- Contact</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220608 20:48:30.266" level="INFO">Clicking link '- Contact'.</msg>
+<status status="PASS" starttime="20220608 20:48:30.265" endtime="20220608 20:48:30.428"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220608 20:48:30.428" endtime="20220608 20:48:30.813"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220608 20:48:30.813" endtime="20220608 20:48:30.827"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:30.428" endtime="20220608 20:48:30.827"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220608 20:48:32.835" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220608 20:48:30.827" endtime="20220608 20:48:32.835"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:30.265" endtime="20220608 20:48:32.835"/>
+</iter>
+<iter>
+<var name="${fl}">- Terms</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220608 20:48:32.836" level="INFO">Clicking link '- Terms'.</msg>
+<status status="PASS" starttime="20220608 20:48:32.836" endtime="20220608 20:48:33.016"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220608 20:48:33.017" endtime="20220608 20:48:33.284"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220608 20:48:33.285" endtime="20220608 20:48:33.300"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:33.016" endtime="20220608 20:48:33.300"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220608 20:48:35.302" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220608 20:48:33.300" endtime="20220608 20:48:35.302"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:32.835" endtime="20220608 20:48:35.302"/>
+</iter>
+<iter>
+<var name="${fl}">- Privacy Policy</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220608 20:48:35.303" level="INFO">Clicking link '- Privacy Policy'.</msg>
+<status status="PASS" starttime="20220608 20:48:35.303" endtime="20220608 20:48:35.433"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220608 20:48:35.434" endtime="20220608 20:48:35.706"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220608 20:48:35.707" endtime="20220608 20:48:35.721"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:35.433" endtime="20220608 20:48:35.721"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220608 20:48:37.724" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220608 20:48:35.721" endtime="20220608 20:48:37.724"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:35.302" endtime="20220608 20:48:37.724"/>
+</iter>
+<iter>
+<var name="${fl}">- Cookie Policy</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220608 20:48:37.725" level="INFO">Clicking link '- Cookie Policy'.</msg>
+<status status="PASS" starttime="20220608 20:48:37.724" endtime="20220608 20:48:37.842"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220608 20:48:37.842" endtime="20220608 20:48:38.118"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220608 20:48:38.118" endtime="20220608 20:48:38.133"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:37.842" endtime="20220608 20:48:38.133"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220608 20:48:40.146" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220608 20:48:38.133" endtime="20220608 20:48:40.146"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:37.724" endtime="20220608 20:48:40.146"/>
+</iter>
+<iter>
+<var name="${fl}">- PDPL Document</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220608 20:48:40.147" level="INFO">Clicking link '- PDPL Document'.</msg>
+<status status="PASS" starttime="20220608 20:48:40.146" endtime="20220608 20:48:40.264"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220608 20:48:40.264" endtime="20220608 20:48:40.538"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220608 20:48:40.538" endtime="20220608 20:48:40.553"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:40.264" endtime="20220608 20:48:40.553"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220608 20:48:42.558" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220608 20:48:40.553" endtime="20220608 20:48:42.558"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:40.146" endtime="20220608 20:48:42.558"/>
+</iter>
+<iter>
+<var name="${fl}">- Homepage</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220608 20:48:42.559" level="INFO">Clicking link '- Homepage'.</msg>
+<status status="PASS" starttime="20220608 20:48:42.558" endtime="20220608 20:48:42.738"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220608 20:48:42.738" endtime="20220608 20:48:43.042"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220608 20:48:43.042" endtime="20220608 20:48:43.057"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:42.738" endtime="20220608 20:48:43.057"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220608 20:48:45.065" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220608 20:48:43.057" endtime="20220608 20:48:45.065"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:42.558" endtime="20220608 20:48:45.065"/>
+</iter>
+<status status="PASS" starttime="20220608 20:48:23.801" endtime="20220608 20:48:45.065"/>
+</for>
+<status status="PASS" starttime="20220608 20:48:23.801" endtime="20220608 20:48:45.065"/>
+</kw>
+<status status="PASS" starttime="20220608 20:48:23.505" endtime="20220608 20:48:45.065"/>
 </kw>
 <kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220608 20:21:57.762" endtime="20220608 20:21:59.862"/>
+<status status="PASS" starttime="20220608 20:48:45.066" endtime="20220608 20:48:47.187"/>
 </kw>
-<status status="PASS" starttime="20220608 20:21:57.762" endtime="20220608 20:21:59.863"/>
+<status status="PASS" starttime="20220608 20:48:45.066" endtime="20220608 20:48:47.187"/>
 </kw>
 <doc>Footer Tests</doc>
 <tag>Footer Area</tag>
 <tag>Smoke</tag>
-<status status="PASS" starttime="20220608 20:21:50.639" endtime="20220608 20:21:59.863"/>
+<status status="PASS" starttime="20220608 20:48:19.720" endtime="20220608 20:48:47.187"/>
 </test>
-<status status="PASS" starttime="20220608 20:21:50.415" endtime="20220608 20:21:59.864"/>
+<status status="PASS" starttime="20220608 20:48:19.525" endtime="20220608 20:48:47.188"/>
 </suite>
 <statistics>
 <total>
