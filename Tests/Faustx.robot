@@ -19,11 +19,17 @@ All users must be enter site
 User should be able to navigate through all dropdown menus
     [Documentation]    Navbar Menu Tests
     [Tags]    Regression    Navbar Dropdown Menus
-    Common.Open FaustX Website    ${SITE_URL}
 
+    Common.Open FaustX Website    ${SITE_URL}
     FaustxWeb.Begin "About Us" section
     FaustxWeb.Begin "What We Do" section
     FaustxWeb.Begin "Our Future" section
     FaustxWeb.Begin "Contact" section
     FaustxWeb.Begin "Homepage" section
-    Pause Execution
+
+User should be able to navigate through all footer links
+    [Documentation]    Footer Tests
+    [Tags]    Smoke    Footer Area
+
+    Common.Open FaustX Website    ${SITE_URL}
+    FaustxWeb.Begin "Footer" area

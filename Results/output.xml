@@ -1,629 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220608 16:08:02.459" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220608 20:21:50.413" rpa="false" schemaversion="3">
 <suite id="s1" name="Faustx" source="C:\Users\byuks\Desktop\QA-Test-Automation-FaustX-Website\tests\Faustx.robot">
-<test id="s1-t1" name="User should be able to navigate through all dropdown menus" line="19">
+<test id="s1-t1" name="User should be able to navigate through all footer links" line="30">
 <kw name="Start FaustX Web Test" library="Common" type="SETUP">
 <arg>${BROWSER}</arg>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220608 16:08:02.701" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220608 16:08:02.700" endtime="20220608 16:08:03.784"/>
+<msg timestamp="20220608 20:21:50.640" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220608 20:21:50.640" endtime="20220608 20:21:51.727"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220608 16:08:03.785" endtime="20220608 16:08:03.900"/>
+<status status="PASS" starttime="20220608 20:21:51.727" endtime="20220608 20:21:51.850"/>
 </kw>
-<status status="PASS" starttime="20220608 16:08:02.700" endtime="20220608 16:08:03.900"/>
+<status status="PASS" starttime="20220608 20:21:50.640" endtime="20220608 20:21:51.850"/>
 </kw>
 <kw name="Open FaustX Website" library="Common">
 <arg>${SITE_URL}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220608 16:08:03.901" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
-<status status="PASS" starttime="20220608 16:08:03.901" endtime="20220608 16:08:06.298"/>
+<msg timestamp="20220608 20:21:51.854" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220608 20:21:51.853" endtime="20220608 20:21:53.988"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id=preloader</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20220608 16:08:06.298" endtime="20220608 16:08:06.756"/>
+<status status="PASS" starttime="20220608 20:21:53.989" endtime="20220608 20:21:54.455"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>class=logo</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:06.756" endtime="20220608 16:08:06.774"/>
+<status status="PASS" starttime="20220608 20:21:54.455" endtime="20220608 20:21:54.473"/>
 </kw>
-<status status="PASS" starttime="20220608 16:08:03.901" endtime="20220608 16:08:06.775"/>
+<status status="PASS" starttime="20220608 20:21:51.851" endtime="20220608 20:21:54.473"/>
 </kw>
-<kw name="Begin &quot;About Us&quot; section" library="FaustxWeb">
-<kw name="Set Variable" library="BuiltIn">
-<var>${SET_CLICK_VAR}</var>
-<arg>click about us section</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220608 16:08:06.776" level="INFO">${SET_CLICK_VAR} = click about us section</msg>
-<status status="PASS" starttime="20220608 16:08:06.775" endtime="20220608 16:08:06.776"/>
+<kw name="Begin &quot;Footer&quot; area" library="FaustxWeb">
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>css=body &gt; div.main-content &gt; footer</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220608 20:21:54.474" endtime="20220608 20:21:54.752"/>
 </kw>
-<kw name="Click about us section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[2]/a</arg>
-<arg>About Us</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:06.776" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a' contains exact text 'About Us'.</msg>
-<status status="PASS" starttime="20220608 16:08:06.776" endtime="20220608 16:08:06.801"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220608 20:21:57.761" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220608 20:21:54.752" endtime="20220608 20:21:57.761"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[2]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:06.802" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:06.802" endtime="20220608 16:08:07.096"/>
+<status status="PASS" starttime="20220608 20:21:54.474" endtime="20220608 20:21:57.761"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:07.096" endtime="20220608 16:08:07.118"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:06.776" endtime="20220608 16:08:07.118"/>
-</kw>
-<kw name="Click in order dropdown elements" library="Navbar">
-<arg>3</arg>
-<arg>${SET_CLICK_VAR}</arg>
-<for flavor="IN RANGE">
-<var>${i}</var>
-<value>1</value>
-<value>${ORDER_MAX_RANGE}</value>
-<iter>
-<var name="${i}">1</var>
-<if>
-<branch type="IF" condition="${i} != 5">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(${i})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:07.119" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(1)'.</msg>
-<status status="PASS" starttime="20220608 16:08:07.119" endtime="20220608 16:08:08.865"/>
-</kw>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>${SET_CLICK_VAR}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Click about us section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[2]/a</arg>
-<arg>About Us</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:08.866" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a' contains exact text 'About Us'.</msg>
-<status status="PASS" starttime="20220608 16:08:08.866" endtime="20220608 16:08:08.891"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[2]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:08.891" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:08.891" endtime="20220608 16:08:09.491"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:09.491" endtime="20220608 16:08:09.508"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:08.866" endtime="20220608 16:08:09.508"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:08.865" endtime="20220608 16:08:09.508"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:07.119" endtime="20220608 16:08:09.508"/>
-</branch>
-<status status="PASS" starttime="20220608 16:08:07.118" endtime="20220608 16:08:09.508"/>
-</if>
-<status status="PASS" starttime="20220608 16:08:07.118" endtime="20220608 16:08:09.508"/>
-</iter>
-<iter>
-<var name="${i}">2</var>
-<if>
-<branch type="IF" condition="${i} != 5">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(${i})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:09.509" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(2)'.</msg>
-<status status="PASS" starttime="20220608 16:08:09.508" endtime="20220608 16:08:09.667"/>
-</kw>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>${SET_CLICK_VAR}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Click about us section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[2]/a</arg>
-<arg>About Us</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:09.667" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a' contains exact text 'About Us'.</msg>
-<status status="PASS" starttime="20220608 16:08:09.667" endtime="20220608 16:08:09.682"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[2]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:09.683" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:09.682" endtime="20220608 16:08:10.456"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:10.456" endtime="20220608 16:08:10.692"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:09.667" endtime="20220608 16:08:10.692"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:09.667" endtime="20220608 16:08:10.693"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:09.508" endtime="20220608 16:08:10.693"/>
-</branch>
-<status status="PASS" starttime="20220608 16:08:09.508" endtime="20220608 16:08:10.693"/>
-</if>
-<status status="PASS" starttime="20220608 16:08:09.508" endtime="20220608 16:08:10.693"/>
-</iter>
-<status status="PASS" starttime="20220608 16:08:07.118" endtime="20220608 16:08:10.693"/>
-</for>
-<status status="PASS" starttime="20220608 16:08:07.118" endtime="20220608 16:08:10.693"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:06.775" endtime="20220608 16:08:10.693"/>
-</kw>
-<kw name="Begin &quot;What We Do&quot; section" library="FaustxWeb">
-<kw name="Set Variable" library="BuiltIn">
-<var>${SET_CLICK_VAR}</var>
-<arg>Click what we do section</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220608 16:08:10.694" level="INFO">${SET_CLICK_VAR} = Click what we do section</msg>
-<status status="PASS" starttime="20220608 16:08:10.694" endtime="20220608 16:08:10.694"/>
-</kw>
-<kw name="Click what we do section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<arg>What We Do</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:10.694" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
-<status status="PASS" starttime="20220608 16:08:10.694" endtime="20220608 16:08:10.714"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:10.715" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:10.714" endtime="20220608 16:08:10.749"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:10.749" endtime="20220608 16:08:10.765"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:10.694" endtime="20220608 16:08:10.765"/>
-</kw>
-<kw name="Click in order dropdown elements" library="Navbar">
-<arg>7</arg>
-<arg>${SET_CLICK_VAR}</arg>
-<for flavor="IN RANGE">
-<var>${i}</var>
-<value>1</value>
-<value>${ORDER_MAX_RANGE}</value>
-<iter>
-<var name="${i}">1</var>
-<if>
-<branch type="IF" condition="${i} != 5">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(${i})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:10.766" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(1)'.</msg>
-<status status="PASS" starttime="20220608 16:08:10.765" endtime="20220608 16:08:11.727"/>
-</kw>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>${SET_CLICK_VAR}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Click what we do section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<arg>What We Do</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:11.728" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
-<status status="PASS" starttime="20220608 16:08:11.728" endtime="20220608 16:08:11.746"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:11.747" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:11.747" endtime="20220608 16:08:12.470"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:12.470" endtime="20220608 16:08:12.487"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:11.728" endtime="20220608 16:08:12.487"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:11.727" endtime="20220608 16:08:12.487"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:10.765" endtime="20220608 16:08:12.487"/>
-</branch>
-<status status="PASS" starttime="20220608 16:08:10.765" endtime="20220608 16:08:12.487"/>
-</if>
-<status status="PASS" starttime="20220608 16:08:10.765" endtime="20220608 16:08:12.487"/>
-</iter>
-<iter>
-<var name="${i}">2</var>
-<if>
-<branch type="IF" condition="${i} != 5">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(${i})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:12.488" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(2)'.</msg>
-<status status="PASS" starttime="20220608 16:08:12.488" endtime="20220608 16:08:13.710"/>
-</kw>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>${SET_CLICK_VAR}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Click what we do section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<arg>What We Do</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:13.711" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
-<status status="PASS" starttime="20220608 16:08:13.710" endtime="20220608 16:08:13.726"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:13.727" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:13.726" endtime="20220608 16:08:14.509"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:14.509" endtime="20220608 16:08:14.747"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:13.710" endtime="20220608 16:08:14.747"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:13.710" endtime="20220608 16:08:14.747"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:12.488" endtime="20220608 16:08:14.747"/>
-</branch>
-<status status="PASS" starttime="20220608 16:08:12.487" endtime="20220608 16:08:14.747"/>
-</if>
-<status status="PASS" starttime="20220608 16:08:12.487" endtime="20220608 16:08:14.747"/>
-</iter>
-<iter>
-<var name="${i}">3</var>
-<if>
-<branch type="IF" condition="${i} != 5">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(${i})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:14.748" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(3)'.</msg>
-<status status="PASS" starttime="20220608 16:08:14.748" endtime="20220608 16:08:16.393"/>
-</kw>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>${SET_CLICK_VAR}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Click what we do section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<arg>What We Do</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:16.395" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
-<status status="PASS" starttime="20220608 16:08:16.394" endtime="20220608 16:08:16.410"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:16.410" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:16.410" endtime="20220608 16:08:17.195"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:17.195" endtime="20220608 16:08:17.210"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:16.394" endtime="20220608 16:08:17.210"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:16.393" endtime="20220608 16:08:17.210"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:14.748" endtime="20220608 16:08:17.210"/>
-</branch>
-<status status="PASS" starttime="20220608 16:08:14.747" endtime="20220608 16:08:17.210"/>
-</if>
-<status status="PASS" starttime="20220608 16:08:14.747" endtime="20220608 16:08:17.210"/>
-</iter>
-<iter>
-<var name="${i}">4</var>
-<if>
-<branch type="IF" condition="${i} != 5">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(${i})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:17.211" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(4)'.</msg>
-<status status="PASS" starttime="20220608 16:08:17.211" endtime="20220608 16:08:17.250"/>
-</kw>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>${SET_CLICK_VAR}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Click what we do section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<arg>What We Do</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:17.251" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
-<status status="PASS" starttime="20220608 16:08:17.250" endtime="20220608 16:08:17.264"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:17.265" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:17.264" endtime="20220608 16:08:17.292"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:17.293" endtime="20220608 16:08:17.306"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:17.250" endtime="20220608 16:08:17.306"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:17.250" endtime="20220608 16:08:17.306"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:17.210" endtime="20220608 16:08:17.306"/>
-</branch>
-<status status="PASS" starttime="20220608 16:08:17.210" endtime="20220608 16:08:17.306"/>
-</if>
-<status status="PASS" starttime="20220608 16:08:17.210" endtime="20220608 16:08:17.306"/>
-</iter>
-<iter>
-<var name="${i}">5</var>
-<if>
-<branch type="IF" condition="${i} != 5">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(${i})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220608 16:08:17.307" endtime="20220608 16:08:17.307"/>
-</kw>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>${SET_CLICK_VAR}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<status status="NOT RUN" starttime="20220608 16:08:17.307" endtime="20220608 16:08:17.307"/>
-</kw>
-<status status="NOT RUN" starttime="20220608 16:08:17.306" endtime="20220608 16:08:17.307"/>
-</branch>
-<status status="PASS" starttime="20220608 16:08:17.306" endtime="20220608 16:08:17.307"/>
-</if>
-<status status="PASS" starttime="20220608 16:08:17.306" endtime="20220608 16:08:17.307"/>
-</iter>
-<iter>
-<var name="${i}">6</var>
-<if>
-<branch type="IF" condition="${i} != 5">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(${i})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:17.307" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(6)'.</msg>
-<status status="PASS" starttime="20220608 16:08:17.307" endtime="20220608 16:08:19.280"/>
-</kw>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>${SET_CLICK_VAR}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Click what we do section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<arg>What We Do</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:19.281" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
-<status status="PASS" starttime="20220608 16:08:19.281" endtime="20220608 16:08:19.295"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[3]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:19.296" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:19.295" endtime="20220608 16:08:20.020"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:20.020" endtime="20220608 16:08:20.047"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:19.281" endtime="20220608 16:08:20.047"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:19.280" endtime="20220608 16:08:20.047"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:17.307" endtime="20220608 16:08:20.047"/>
-</branch>
-<status status="PASS" starttime="20220608 16:08:17.307" endtime="20220608 16:08:20.047"/>
-</if>
-<status status="PASS" starttime="20220608 16:08:17.307" endtime="20220608 16:08:20.047"/>
-</iter>
-<status status="PASS" starttime="20220608 16:08:10.765" endtime="20220608 16:08:20.047"/>
-</for>
-<status status="PASS" starttime="20220608 16:08:10.765" endtime="20220608 16:08:20.047"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:10.693" endtime="20220608 16:08:20.047"/>
-</kw>
-<kw name="Begin &quot;Our Future&quot; section" library="FaustxWeb">
-<kw name="Set Variable" library="BuiltIn">
-<var>${SET_CLICK_VAR}</var>
-<arg>Click our future section</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220608 16:08:20.048" level="INFO">${SET_CLICK_VAR} = Click our future section</msg>
-<status status="PASS" starttime="20220608 16:08:20.048" endtime="20220608 16:08:20.048"/>
-</kw>
-<kw name="Click our future section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[4]/a</arg>
-<arg>Our Future</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:20.049" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a' contains exact text 'Our Future'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.048" endtime="20220608 16:08:20.068"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[4]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:20.069" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.069" endtime="20220608 16:08:20.111"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:20.112" endtime="20220608 16:08:20.127"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.048" endtime="20220608 16:08:20.127"/>
-</kw>
-<kw name="Click in order dropdown elements" library="Navbar">
-<arg>3</arg>
-<arg>${SET_CLICK_VAR}</arg>
-<for flavor="IN RANGE">
-<var>${i}</var>
-<value>1</value>
-<value>${ORDER_MAX_RANGE}</value>
-<iter>
-<var name="${i}">1</var>
-<if>
-<branch type="IF" condition="${i} != 5">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(${i})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:20.129" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(1)'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.129" endtime="20220608 16:08:20.167"/>
-</kw>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>${SET_CLICK_VAR}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Click our future section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[4]/a</arg>
-<arg>Our Future</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:20.168" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a' contains exact text 'Our Future'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.168" endtime="20220608 16:08:20.181"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[4]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:20.181" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.181" endtime="20220608 16:08:20.208"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:20.208" endtime="20220608 16:08:20.221"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.168" endtime="20220608 16:08:20.221"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.168" endtime="20220608 16:08:20.221"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.129" endtime="20220608 16:08:20.221"/>
-</branch>
-<status status="PASS" starttime="20220608 16:08:20.128" endtime="20220608 16:08:20.221"/>
-</if>
-<status status="PASS" starttime="20220608 16:08:20.128" endtime="20220608 16:08:20.221"/>
-</iter>
-<iter>
-<var name="${i}">2</var>
-<if>
-<branch type="IF" condition="${i} != 5">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(${i})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:20.222" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(2)'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.222" endtime="20220608 16:08:20.258"/>
-</kw>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>${SET_CLICK_VAR}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Click our future section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[4]/a</arg>
-<arg>Our Future</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:20.260" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a' contains exact text 'Our Future'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.259" endtime="20220608 16:08:20.276"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[4]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:20.276" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.276" endtime="20220608 16:08:20.303"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${DROPDOWN_CONTENT}\(1)</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220608 16:08:20.303" endtime="20220608 16:08:20.319"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.259" endtime="20220608 16:08:20.319"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.258" endtime="20220608 16:08:20.319"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.222" endtime="20220608 16:08:20.319"/>
-</branch>
-<status status="PASS" starttime="20220608 16:08:20.221" endtime="20220608 16:08:20.319"/>
-</if>
-<status status="PASS" starttime="20220608 16:08:20.221" endtime="20220608 16:08:20.319"/>
-</iter>
-<status status="PASS" starttime="20220608 16:08:20.128" endtime="20220608 16:08:20.319"/>
-</for>
-<status status="PASS" starttime="20220608 16:08:20.128" endtime="20220608 16:08:20.319"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.048" endtime="20220608 16:08:20.319"/>
-</kw>
-<kw name="Begin &quot;Contact&quot; section" library="FaustxWeb">
-<kw name="Click contact section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[5]/a</arg>
-<arg>Contact</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:20.320" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[5]/a' contains exact text 'Contact'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.320" endtime="20220608 16:08:20.339"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[5]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:20.339" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[5]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.339" endtime="20220608 16:08:20.512"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.320" endtime="20220608 16:08:20.512"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.319" endtime="20220608 16:08:20.512"/>
-</kw>
-<kw name="Begin &quot;Homepage&quot; section" library="FaustxWeb">
-<kw name="click homepage section" library="Navbar">
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[1]/a</arg>
-<arg>Homepage</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220608 16:08:20.513" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[1]/a' contains exact text 'Homepage'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.513" endtime="20220608 16:08:20.533"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${DROPDOWN_SECTION}\[1]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220608 16:08:20.533" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[1]/a'.</msg>
-<status status="PASS" starttime="20220608 16:08:20.533" endtime="20220608 16:08:21.399"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.513" endtime="20220608 16:08:21.400"/>
-</kw>
-<status status="PASS" starttime="20220608 16:08:20.513" endtime="20220608 16:08:21.400"/>
-</kw>
-<kw name="Pause Execution" library="Dialogs">
-<doc>Pauses execution until user clicks ``Ok`` button.</doc>
-<status status="PASS" starttime="20220608 16:08:21.400" endtime="20220608 16:08:26.470"/>
+<status status="PASS" starttime="20220608 20:21:54.473" endtime="20220608 20:21:57.761"/>
 </kw>
 <kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220608 16:08:26.471" endtime="20220608 16:08:28.599"/>
+<status status="PASS" starttime="20220608 20:21:57.762" endtime="20220608 20:21:59.862"/>
 </kw>
-<status status="PASS" starttime="20220608 16:08:26.471" endtime="20220608 16:08:28.599"/>
+<status status="PASS" starttime="20220608 20:21:57.762" endtime="20220608 20:21:59.863"/>
 </kw>
-<doc>Navbar Menu Tests</doc>
-<tag>Navbar Dropdown Menus</tag>
-<tag>Regression</tag>
-<status status="PASS" starttime="20220608 16:08:02.699" endtime="20220608 16:08:28.600"/>
+<doc>Footer Tests</doc>
+<tag>Footer Area</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220608 20:21:50.639" endtime="20220608 20:21:59.863"/>
 </test>
-<status status="PASS" starttime="20220608 16:08:02.461" endtime="20220608 16:08:28.601"/>
+<status status="PASS" starttime="20220608 20:21:50.415" endtime="20220608 20:21:59.864"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Navbar Dropdown Menus</stat>
-<stat pass="1" fail="0" skip="0">Regression</stat>
+<stat pass="1" fail="0" skip="0">Footer Area</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Faustx">Faustx</stat>

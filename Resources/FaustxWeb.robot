@@ -1,11 +1,13 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource    ./PO/Faustx/Navbar.robot
+Resource    ./PO/Faustx/Footer.robot
 
 *** Variables ***
 
 
 *** Keywords ***
+# Navbar Tests
 Begin "About Us" section
     ${SET_CLICK_VAR} =  Set Variable    click about us section
     Navbar.Click about us section
@@ -27,3 +29,7 @@ Begin "Contact" section
 Begin "Homepage" section
     Navbar.click homepage section
 
+
+# Footer Tests
+Begin "Footer" area
+    Footer.Scroll to footer
