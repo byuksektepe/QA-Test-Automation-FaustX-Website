@@ -20,6 +20,6 @@ User should be able to navigate through all dropdown menus
     [Tags]    Regression    Navbar Dropdown Menus
     Common.Open FaustX Website    ${SITE_URL}
 
-    FaustxWeb."About us" section
-    FaustxWeb."What we do" section
-    FaustxWeb."Our future" section
+    FaustxWeb.Begin "About Us" section
+    FaustxWeb.Begin "What We Do" section
+    FaustxWeb.Begin "Our Future" section
