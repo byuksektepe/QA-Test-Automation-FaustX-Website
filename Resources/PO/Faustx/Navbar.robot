@@ -22,7 +22,7 @@ Click in order about us elements
     click about us section
     END
 
-click what we do section
+Click what we do section
     Element Text Should Be    ${DROPDOWN_SECTION}\[3]/a    What We Do
     Click Element    ${DROPDOWN_SECTION}\[3]/a
     Wait Until Element Is Visible   ${DROPDOWN_CONTENT}\(1)
