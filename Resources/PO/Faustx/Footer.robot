@@ -13,6 +13,6 @@ Scroll to footer
 Click in order footer links
     [Arguments]    ${ORDER_MAX_RANGE}
     FOR    ${fl}  IN   @{FOOTER_LINKS}
-    Click Link    ${fl}
-    Scroll to footer
+        Click Link    ${fl}
+        Scroll to footer
     END
