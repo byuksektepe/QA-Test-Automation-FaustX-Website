@@ -2,8 +2,8 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${NEXT_BUTTON} =      class=swiper-button-next
-${PREV_BUTTON} =      class=swiper-button-prev
+${NEXT_BUTTON} =      css=div[class='swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer']
+${PREV_BUTTON} =      css=div[class='swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer']
 ${SLIDER_NUMBER} =    css=body > header > div.swiper-pagination.custom-font.swiper-pagination-fraction > span.swiper-pagination-current
 
 *** Keywords ***
