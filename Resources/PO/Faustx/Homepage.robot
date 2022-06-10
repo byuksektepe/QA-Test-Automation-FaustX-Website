@@ -8,6 +8,7 @@ ${SLIDER_NUMBER} =    xpath=//span[@class='swiper-pagination-current']
 
 *** Keywords ***
 Verify Page Loaded
+    [Documentation]    Verify "Homepage" is successfully loaded
     wait until element is visible    ${NEXT_BUTTON}
 
 Check slider content
