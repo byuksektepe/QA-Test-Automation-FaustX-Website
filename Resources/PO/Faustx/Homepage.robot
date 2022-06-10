@@ -32,3 +32,5 @@ Main slider movement
     Sleep    1s
     Run Keyword      Check slider content    1
 
+Begin "What We Do" Sliders Section
+
