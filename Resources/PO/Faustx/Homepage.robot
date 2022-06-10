@@ -8,7 +8,7 @@ ${PREV_BUTTON} =      css=div[class='swiper-button-prev swiper-nav-ctrl prev-ctr
 ${SLIDER_NUMBER} =    xpath=//span[@class='swiper-pagination-current']
 
 ${NEXT_BUTTON_WWD} =    css=.ion-ios-arrow-right
-${PREV_BUTTON}} =    css=.ion-ios-arrow-right
+${PREV_BUTTON_WWD} =    css=.ion-ios-arrow-right
 
 *** Keywords ***
 Verify Page Loaded
@@ -38,7 +38,7 @@ Main slider movement
     Sleep    1s
     Run Keyword      Check slider content    1
 
-Begin "What We Do" Sliders Section
+Move "What We Do" Section Slider
 
     Click Button    css=.ion-ios-arrow-right
 
