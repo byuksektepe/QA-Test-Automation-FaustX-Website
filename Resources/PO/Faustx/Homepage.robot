@@ -16,6 +16,7 @@ Check slider content
 
 
 Main slider movement
+    [Documentation]    Check Main Slider, slides and displays correct content
     Click Element    ${NEXT_BUTTON}
     Sleep    1s
     Run Keyword      Check slider content    2
