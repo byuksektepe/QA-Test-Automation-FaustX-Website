@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation    includes "Homepage" Test Keywords
 Library    SeleniumLibrary
 
 *** Variables ***
