@@ -8,6 +8,7 @@ ${PREV_BUTTON} =      css=div[class='swiper-button-prev swiper-nav-ctrl prev-ctr
 ${SLIDER_NUMBER} =    xpath=//span[@class='swiper-pagination-current']
 
 ${NEXT_BUTTON_WWD} =    css=.ion-ios-arrow-right
+${PREV_BUTTON}} =    css=.ion-ios-arrow-right
 
 *** Keywords ***
 Verify Page Loaded
