@@ -37,5 +37,5 @@ Main slider movement
 
 Begin "What We Do" Sliders Section
 
-    Click Button    .ion-ios-arrow-right
+    Click Button    css=.ion-ios-arrow-right
 
