@@ -8,7 +8,7 @@ ${FX_LOGO} =    class=logo
 *** Keywords ***
 Start FaustX Web Test
     [Arguments]     ${BROWSER}
-    Open Browser    about:blank    ${BROWSER}
+    Open Browser    about:blank    ${BROWSER}    add_experimental_option('excludeSwitches', ['enable-logging'])
     Maximize Browser Window
 
 Open FaustX Website
