@@ -7,8 +7,8 @@ ${NEXT_BUTTON} =      css=div[class='swiper-button-next swiper-nav-ctrl next-ctr
 ${PREV_BUTTON} =      css=div[class='swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer']
 ${SLIDER_NUMBER} =    xpath=//span[@class='swiper-pagination-current']
 
-${NEXT_BUTTON_WWD} =    css=.ion-ios-arrow-right
-${PREV_BUTTON_WWD} =    css=.ion-ios-arrow-right
+${NEXT_BUTTON_WWD} =    xpath=//div[@class='swiper-container swiper-container-initialized swiper-container-horizontal']/div[@class='swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer']
+${PREV_BUTTON_WWD} =    xpath=//div[@class='swiper-container swiper-container-initialized swiper-container-horizontal']/div[@class='swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer']
 
 *** Keywords ***
 Verify Page Loaded
