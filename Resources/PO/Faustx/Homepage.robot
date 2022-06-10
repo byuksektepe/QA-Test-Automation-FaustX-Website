@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    includes "Homepage" Test Keywords
 Library    SeleniumLibrary
+Resource    ../../GlobalSubKeywords.robot
 
 *** Variables ***
 ${NEXT_BUTTON} =      css=div[class='swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer']
@@ -40,5 +41,5 @@ Main slider movement
 
 Move "What We Do" Section Slider
 
-    Click Button    css=.ion-ios-arrow-right
+    Click the element multiple times    3    ELEMENT    ${NEXT_BUTTON_WWD}    2
 
