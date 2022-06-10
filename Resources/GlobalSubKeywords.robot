@@ -17,9 +17,7 @@ Click the element multiple times
             Click Button    ${LOCATOR}
             Sleep    ${WAIT}\s
         END
-    END
-
-    IF    "${WHAT?}" == "ELEMENT"
+    ELSE IF    "${WHAT?}" == "ELEMENT"
          FOR  ${i}  IN RANGE  ${CLICK_REPEAT}
             Click Element    ${LOCATOR}
             Sleep    ${WAIT}\s
