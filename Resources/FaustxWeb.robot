@@ -42,5 +42,8 @@ Main Slider
     Homepage.Verify Page Loaded
     Homepage.Main slider movement
 
+What We Do Slider
+    Homepage.Move "What We Do" Section Slider
+
 
 

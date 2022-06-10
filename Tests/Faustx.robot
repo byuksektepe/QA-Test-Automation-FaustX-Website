@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation    FaustX's Official Website Test Cases, Test numbers are indicated with FX-M0* tags.
 Library    Dialogs
 Resource    ../Resources/Common.robot
 Resource    ../Resources/FaustxWeb.robot
@@ -36,7 +37,15 @@ User should be able to navigate through all footer links
 
 Main slider should be move and display correct image
     [Documentation]         Homepage Main Slider Tests
-    [Tags]    FX-M04    Regression    Homepage    Main Slider
+    [Tags]    FX-M04    Smoke    Homepage    Main Slider
 
     Common.Open FaustX Website    ${SITE_URL}
     FaustxWeb.Main Slider
+
+"What We Do" slider should be move and display correct image
+    [Documentation]         Homepage Sub Slider Tests
+    [Tags]    FX-M05    Smoke    Homepage    Sub Slider
+
+    Common.Open FaustX Website    ${SITE_URL}
+    FaustxWeb.What We Do Slider
+

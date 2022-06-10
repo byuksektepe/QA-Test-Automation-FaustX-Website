@@ -12,14 +12,14 @@ Click the element multiple times
     # Set Wait 0 for no wait
     [Arguments]    ${CLICK_REPEAT}    ${WHAT?}    ${LOCATOR}    ${WAIT}
 
-    IF   ${WHAT?} == BUTTON
+    IF   "${WHAT?}" == "BUTTON"
         FOR   ${i}  IN RANGE  ${CLICK_REPEAT}
             Click Button    ${LOCATOR}
             Sleep    ${WAIT}\s
-
         END
     END
-    ELSE IF    ${WHAT?} == ELEMENT
+
+    IF    "${WHAT?}" == "ELEMENT"
          FOR  ${i}  IN RANGE  ${CLICK_REPEAT}
             Click Element    ${LOCATOR}
             Sleep    ${WAIT}\s
