@@ -1,4 +1,4 @@
-﻿## QA Test Automation FaustX Website
+﻿## QA Test Automation FaustX's Website
  
  ![RobotFramework](https://img.shields.io/badge/Robot%20Framework-000000?style=for-the-badge&logo=robot-framework&logoColor=white)
  ![Selenium](https://img.shields.io/badge/Selenium-000000?style=for-the-badge&logo=Selenium&logoColor=white)
