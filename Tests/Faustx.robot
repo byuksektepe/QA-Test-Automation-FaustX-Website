@@ -13,12 +13,12 @@ ${SITE_URL} =    https://www.faustx.com/en/
 *** Test Cases ***
 
 All users must be enter site
-    [Tags]    Smoke    Enter Site
+    [Tags]    FX-M01    Smoke    Enter Site
     Common.Open FaustX Website    ${SITE_URL}
 
 User should be able to navigate through all dropdown menus
     [Documentation]         Navbar Menu Tests
-    [Tags]    Regression    Navbar Dropdown Menus
+    [Tags]    FX-M02    Regression    Navbar Dropdown Menus
 
     Common.Open FaustX Website    ${SITE_URL}
     FaustxWeb.Begin "About Us" section
@@ -29,14 +29,14 @@ User should be able to navigate through all dropdown menus
 
 User should be able to navigate through all footer links
     [Documentation]    Footer Tests
-    [Tags]    Smoke    Footer Area
+    [Tags]    FX-M03    Smoke    Footer Area
 
     Common.Open FaustX Website    ${SITE_URL}
     FaustxWeb.Begin "Footer" area
 
 Main slider should be move and display correct image
     [Documentation]         Homepage Main Slider Tests
-    [Tags]    Regression    Homepage    Main Slider
+    [Tags]    FX-M04    Regression    Homepage    Main Slider
 
     Common.Open FaustX Website    ${SITE_URL}
     FaustxWeb.Main Slider

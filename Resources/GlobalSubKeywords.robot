@@ -7,7 +7,7 @@ Library    SeleniumLibrary
 *** Keywords ***
 Click the element multiple times
     [Documentation]    Called when a button has to be clicked more than once
-    [Tags]    FX-SUB01    Multiple Click
+    [Tags]    FX-S01    Multiple Click
     # Send full locator like "xpath=//div[@id='1']" in this keyword
     # Set Wait 0 for no wait
     [Arguments]    ${CLICK_REPEAT}    ${WHAT?}    ${LOCATOR}    ${WAIT}
