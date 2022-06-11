@@ -49,3 +49,10 @@ Main slider should be move and display correct image
     Common.Open FaustX Website    ${SITE_URL}
     FaustxWeb.What We Do Slider
 
+Homepage Contact Form must be work
+    [Documentation]         Homepage Contact Form Tests
+    [Tags]    FX-M06    Smoke    Homepage    Contact Form
+
+    Common.Open FaustX Website    ${SITE_URL}
+    FaustxWeb.Begin "Give Your Feedback" Button
+
