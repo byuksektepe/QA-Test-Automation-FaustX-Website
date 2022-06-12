@@ -44,6 +44,7 @@ Main Slider
     Homepage.Main slider movement
 
 What We Do Slider
+    Homepage.Verify Page Loaded
     Homepage.Move "What We Do" Section Slider
 
 Begin "Give Your Feedback" Button
