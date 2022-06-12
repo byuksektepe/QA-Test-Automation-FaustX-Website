@@ -3,6 +3,7 @@ Library    SeleniumLibrary
 Resource    ./PO/Faustx/Navbar.robot
 Resource    ./PO/Faustx/Footer.robot
 Resource    ./PO/Faustx/Homepage.robot
+Resource    ./PO/Faustx/Contact.robot
 
 *** Variables ***
 
@@ -47,6 +48,7 @@ What We Do Slider
 
 Begin "Give Your Feedback" Button
     Homepage.Click "Give Your Feedback" Form
+    Contact.Verify Page Loaded
 
 
 
