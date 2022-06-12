@@ -50,7 +50,7 @@ Main slider should be move and display correct image
     FaustxWeb.What We Do Slider
 
 Homepage Contact Form must be work
-    [Documentation]         Homepage Contact Form Tests
+    [Documentation]         Homepage Contact Form Complete Tests
     [Tags]    FX-M06    Smoke    Homepage    Contact Form
 
     Common.Open FaustX Website    ${SITE_URL}
