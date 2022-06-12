@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220612 02:58:28.219" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220612 03:08:40.271" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-FaustX-Website\tests">
 <suite id="s1-s1" name="Faustx" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-FaustX-Website\tests\Faustx.robot">
 <test id="s1-s1-t1" name="Homepage Contact Form must be work" line="52">
@@ -10,99 +10,97 @@
 <arg>${BROWSER}</arg>
 <arg>add_experimental_option('excludeSwitches', ['enable-logging'])</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220612 02:58:28.505" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220612 02:58:28.504" endtime="20220612 02:58:30.016"/>
+<msg timestamp="20220612 03:08:40.484" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220612 03:08:40.483" endtime="20220612 03:08:41.541"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220612 02:58:30.016" endtime="20220612 02:58:30.137"/>
+<status status="PASS" starttime="20220612 03:08:41.541" endtime="20220612 03:08:41.660"/>
 </kw>
-<status status="PASS" starttime="20220612 02:58:28.504" endtime="20220612 02:58:30.137"/>
+<status status="PASS" starttime="20220612 03:08:40.483" endtime="20220612 03:08:41.660"/>
 </kw>
 <kw name="Open FaustX Website" library="Common">
 <arg>${SITE_URL}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220612 02:58:30.138" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
-<status status="PASS" starttime="20220612 02:58:30.138" endtime="20220612 02:58:32.299"/>
+<msg timestamp="20220612 03:08:41.661" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220612 03:08:41.661" endtime="20220612 03:08:43.771"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>${PRELOADER}</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20220612 02:58:32.299" endtime="20220612 02:58:32.797"/>
+<status status="PASS" starttime="20220612 03:08:43.771" endtime="20220612 03:08:44.224"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${FX_LOGO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220612 02:58:32.797" endtime="20220612 02:58:32.815"/>
+<status status="PASS" starttime="20220612 03:08:44.224" endtime="20220612 03:08:44.242"/>
 </kw>
-<status status="PASS" starttime="20220612 02:58:30.138" endtime="20220612 02:58:32.815"/>
+<status status="PASS" starttime="20220612 03:08:41.661" endtime="20220612 03:08:44.242"/>
 </kw>
 <kw name="Begin &quot;Give Your Feedback&quot; Button" library="FaustxWeb">
 <kw name="Click &quot;Give Your Feedback&quot; Form" library="Homepage">
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${CONTACT_FORM_BUTTON}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220612 02:58:32.816" endtime="20220612 02:58:33.096"/>
+<status status="PASS" starttime="20220612 03:08:44.243" endtime="20220612 03:08:44.528"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${CONTACT_FORM_BUTTON}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220612 02:58:33.096" endtime="20220612 02:58:33.112"/>
+<status status="PASS" starttime="20220612 03:08:44.528" endtime="20220612 03:08:44.542"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CONTACT_FORM_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220612 02:58:33.113" level="INFO">Clicking element 'xpath=//a[.='Contact Form']'.</msg>
-<status status="PASS" starttime="20220612 02:58:33.113" endtime="20220612 02:58:33.271"/>
+<msg timestamp="20220612 03:08:44.542" level="INFO">Clicking element 'xpath=//a[.='Contact Form']'.</msg>
+<status status="PASS" starttime="20220612 03:08:44.542" endtime="20220612 03:08:44.714"/>
 </kw>
-<status status="PASS" starttime="20220612 02:58:32.816" endtime="20220612 02:58:33.271"/>
+<status status="PASS" starttime="20220612 03:08:44.243" endtime="20220612 03:08:44.714"/>
 </kw>
 <kw name="Verify Page Loaded" library="Contact">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>${CONTACT_PAGE_VERIFY_ELEMENT}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<msg timestamp="20220612 02:58:40.201" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220612 02:58:40.201" level="FAIL">Text 'css=section[class='contact section-padding']' did not appear in 5 seconds.</msg>
-<status status="FAIL" starttime="20220612 02:58:33.272" endtime="20220612 02:58:40.253"/>
+<status status="PASS" starttime="20220612 03:08:44.714" endtime="20220612 03:08:44.723"/>
 </kw>
-<status status="FAIL" starttime="20220612 02:58:33.272" endtime="20220612 02:58:40.254"/>
+<status status="PASS" starttime="20220612 03:08:44.714" endtime="20220612 03:08:44.723"/>
 </kw>
-<status status="FAIL" starttime="20220612 02:58:32.815" endtime="20220612 02:58:40.254"/>
+<status status="PASS" starttime="20220612 03:08:44.242" endtime="20220612 03:08:44.723"/>
 </kw>
 <kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220612 02:58:40.256" endtime="20220612 02:58:42.378"/>
+<status status="PASS" starttime="20220612 03:08:44.724" endtime="20220612 03:08:46.818"/>
 </kw>
-<status status="PASS" starttime="20220612 02:58:40.255" endtime="20220612 02:58:42.378"/>
+<status status="PASS" starttime="20220612 03:08:44.723" endtime="20220612 03:08:46.818"/>
 </kw>
-<doc>Homepage Contact Form Tests</doc>
+<doc>Homepage Contact Form Complete Tests</doc>
 <tag>Contact Form</tag>
 <tag>FX-M06</tag>
 <tag>Homepage</tag>
 <tag>Smoke</tag>
-<status status="FAIL" starttime="20220612 02:58:28.503" endtime="20220612 02:58:42.379">Text 'css=section[class='contact section-padding']' did not appear in 5 seconds.</status>
+<status status="PASS" starttime="20220612 03:08:40.482" endtime="20220612 03:08:46.819"/>
 </test>
 <doc>FaustX's Official Website Test Cases, Test numbers are indicated with FX-M0* tags.</doc>
-<status status="FAIL" starttime="20220612 02:58:28.241" endtime="20220612 02:58:42.380"/>
+<status status="PASS" starttime="20220612 03:08:40.289" endtime="20220612 03:08:46.820"/>
 </suite>
-<status status="FAIL" starttime="20220612 02:58:28.221" endtime="20220612 02:58:42.382"/>
+<status status="PASS" starttime="20220612 03:08:40.272" endtime="20220612 03:08:46.822"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">Contact Form</stat>
-<stat pass="0" fail="1" skip="0">FX-M06</stat>
-<stat pass="0" fail="1" skip="0">Homepage</stat>
-<stat pass="0" fail="1" skip="0">Smoke</stat>
+<stat pass="1" fail="0" skip="0">Contact Form</stat>
+<stat pass="1" fail="0" skip="0">FX-M06</stat>
+<stat pass="1" fail="0" skip="0">Homepage</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Faustx">Tests.Faustx</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Faustx">Tests.Faustx</stat>
 </suite>
 </statistics>
 <errors>

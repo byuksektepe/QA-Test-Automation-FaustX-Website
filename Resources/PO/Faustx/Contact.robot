@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${CONTACT_PAGE_VERIFY_ELEMENT} =    css=section[class='contact section-padding']
+${CONTACT_PAGE_VERIFY_ELEMENT} =    Help us make our products and services better.
 
 *** Keywords ***
 Verify Page Loaded
