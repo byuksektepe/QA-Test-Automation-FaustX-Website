@@ -10,8 +10,9 @@ Verify "Terms And Conditions" Document
     Scroll Element Into View    ${TERMS_LINK}
     Click Link  ${TERMS_LINK}
     Page Should Contain     Terms and Conditions (Turkish)
+    Sleep   1s
     Go Back
-    Sleep   2s
+    Sleep   1s
 
 
 

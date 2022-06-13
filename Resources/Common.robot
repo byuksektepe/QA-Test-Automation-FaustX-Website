@@ -17,8 +17,5 @@ Open FaustX Website
     Wait Until Element Is Not Visible    ${PRELOADER}
     Wait Until Element Is Visible        ${FX_LOGO}
 
-Go Back
-    Execute Javascript  history.back()
-
 End FaustX Web Test
     Close Browser
