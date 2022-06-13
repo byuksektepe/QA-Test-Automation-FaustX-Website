@@ -6,4 +6,6 @@ Library    SeleniumLibrary
 
 
 *** Keywords ***
+Verify "Terms And Conditions" Document
+
 
