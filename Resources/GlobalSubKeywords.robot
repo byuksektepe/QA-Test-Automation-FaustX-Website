@@ -23,6 +23,8 @@ Click the element multiple times
             Sleep    ${WAIT}\s
         END
     END
+
 Move to top button test
     [Documentation]    Move to top button tests by each pages
     [Tags]    FX-S02
+    [Arguments]    ${CHECK_TOP_ELEMENT}
