@@ -57,6 +57,8 @@ Begin "Give Your Feedback" Button
 Begin "Documents" index page
     Documents.Verify "Terms And Conditions"
     Documents.Verify "Privacy Policy"
+    Documents.Verify "Cookie Policy"
+    Documents.Verify "PDPL Document"
 
 
 
