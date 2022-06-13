@@ -19,6 +19,9 @@ Verify Page Loaded
     [Documentation]    Verify "Homepage" is successfully loaded
     wait until element is visible    ${NEXT_BUTTON}
 
+Verify Move To Top Button
+    GlobalSubKeywords.Move to top button test
+
 Check slider content
     [Arguments]              ${NUM}
     Element Text Should Be   ${SLIDER_NUMBER}  ${NUM}

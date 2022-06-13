@@ -29,5 +29,5 @@ Move to top button test
     [Tags]    FX-S02   Move To Top
     Click Element    ${MOVE_TO_TOP_BUTTON}
     Wait Until Element Is Not Visible    ${MOVE_TO_TOP_BUTTON}
-    element should not be visible
+    Element Should Not Be Visible   ${MOVE_TO_TOP_BUTTON}
 
