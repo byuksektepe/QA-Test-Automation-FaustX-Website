@@ -1,5 +1,5 @@
 *** Settings ***
-
+Library    SeleniumLibrary
 
 *** Variables ***
 
