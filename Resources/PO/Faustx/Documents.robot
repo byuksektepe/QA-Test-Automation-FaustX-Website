@@ -9,6 +9,9 @@ ${COOKIE_LINK} =    xpath=//a[@href='cookie-policy']
 ${PDPL_LINK} =    xpath=//a[@href='personal-data-protection-law']
 
 *** Keywords ***
+Verify Page Loaded
+    Wait Until Page Contains    Files related to the Company and Products.
+
 Verify "Terms And Conditions"
     Scroll Element Into View    ${TERMS_LINK}
     Click Link  ${TERMS_LINK}
