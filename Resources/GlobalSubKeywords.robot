@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-
+${MOVE_TO_TOP_BUTTON} =    xpath=//div[@class='progress-wrap cursor-pointer active-progress']
 
 *** Keywords ***
 Click the element multiple times
@@ -26,5 +26,6 @@ Click the element multiple times
 
 Move to top button test
     [Documentation]    Move to top button tests by each pages
-    [Tags]    FX-S02
-    [Arguments]    ${CHECK_TOP_ELEMENT}
+    [Tags]    FX-S02   Move To Top
+    click element
+
