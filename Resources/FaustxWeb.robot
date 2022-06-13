@@ -30,6 +30,7 @@ Begin "Contact" section
 
 Begin "Homepage" section
     Navbar.click homepage section
+    Verify Move To Top Button
 
 
 # Footer Tests

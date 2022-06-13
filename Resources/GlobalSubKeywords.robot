@@ -1,8 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
+Resource    ./PO/Faustx/Footer.robot
 
 *** Variables ***
-${MOVE_TO_TOP_BUTTON} =    xpath=//div[@class='progress-wrap cursor-pointer active-progress']
+${MOVE_TO_TOP_BUTTON} =    xpath=//div[contains(@class, 'progress-wrap cursor-pointer active-progress')]
 
 *** Keywords ***
 Click the element multiple times
@@ -27,6 +28,8 @@ Click the element multiple times
 Move to top button test
     [Documentation]    Move to top button tests by each pages
     [Tags]    FX-S02   Move To Top
+    Footer.Scroll to footer
+    Wait Until Element Is Not Visible    ${MOVE_TO_TOP_BUTTON}
     Click Element    ${MOVE_TO_TOP_BUTTON}
     Wait Until Element Is Not Visible    ${MOVE_TO_TOP_BUTTON}
     Element Should Not Be Visible   ${MOVE_TO_TOP_BUTTON}
