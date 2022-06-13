@@ -4,6 +4,7 @@ Resource    ./PO/Faustx/Navbar.robot
 Resource    ./PO/Faustx/Footer.robot
 Resource    ./PO/Faustx/Homepage.robot
 Resource    ./PO/Faustx/Contact.robot
+Resource    ./PO/Faustx/Documents.robot
 
 *** Variables ***
 
@@ -54,6 +55,8 @@ Begin "Give Your Feedback" Button
 
 # Documents Tests
 Begin "Documents" index page
+    Documents.Verify "Terms And Conditions" Document
+
 
 
 

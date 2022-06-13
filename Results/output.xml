@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220613 23:49:13.719" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220613 23:56:03.826" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-FaustX-Website\tests">
 <suite id="s1-s1" name="Faustx" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-FaustX-Website\tests\Faustx.robot">
 <test id="s1-s1-t1" name="User should be see all documents" line="59">
@@ -10,52 +10,69 @@
 <arg>${BROWSER}</arg>
 <arg>add_experimental_option('excludeSwitches', ['enable-logging'])</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220613 23:49:13.939" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220613 23:49:13.939" endtime="20220613 23:49:15.001"/>
+<msg timestamp="20220613 23:56:04.073" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220613 23:56:04.073" endtime="20220613 23:56:05.141"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220613 23:49:15.001" endtime="20220613 23:49:15.129"/>
+<status status="PASS" starttime="20220613 23:56:05.141" endtime="20220613 23:56:05.273"/>
 </kw>
-<status status="PASS" starttime="20220613 23:49:13.938" endtime="20220613 23:49:15.129"/>
+<status status="PASS" starttime="20220613 23:56:04.072" endtime="20220613 23:56:05.273"/>
 </kw>
 <kw name="Open FaustX Website" library="Common">
 <arg>${SITE_URL}\documents/</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220613 23:49:15.130" level="INFO">Opening url 'https://www.faustx.com/en/documents/'</msg>
-<status status="PASS" starttime="20220613 23:49:15.130" endtime="20220613 23:49:15.697"/>
+<msg timestamp="20220613 23:56:05.275" level="INFO">Opening url 'https://www.faustx.com/en/documents/'</msg>
+<status status="PASS" starttime="20220613 23:56:05.274" endtime="20220613 23:56:05.983"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>${PRELOADER}</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20220613 23:49:15.697" endtime="20220613 23:49:16.168"/>
+<status status="PASS" starttime="20220613 23:56:05.984" endtime="20220613 23:56:06.460"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${FX_LOGO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220613 23:49:16.168" endtime="20220613 23:49:16.187"/>
+<status status="PASS" starttime="20220613 23:56:06.460" endtime="20220613 23:56:06.479"/>
 </kw>
-<status status="PASS" starttime="20220613 23:49:15.129" endtime="20220613 23:49:16.187"/>
+<status status="PASS" starttime="20220613 23:56:05.274" endtime="20220613 23:56:06.479"/>
+</kw>
+<kw name="Begin &quot;Documents&quot; index page" library="FaustxWeb">
+<kw name="Verify &quot;Terms And Conditions&quot; Document" library="Documents">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${TERMS_LINK}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220613 23:56:06.480" endtime="20220613 23:56:06.758"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${TERMS_LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220613 23:56:06.759" level="INFO">Clicking link 'xpath=//a[@href='terms-and-conditions']'.</msg>
+<status status="PASS" starttime="20220613 23:56:06.759" endtime="20220613 23:56:07.068"/>
+</kw>
+<status status="PASS" starttime="20220613 23:56:06.480" endtime="20220613 23:56:07.068"/>
+</kw>
+<status status="PASS" starttime="20220613 23:56:06.479" endtime="20220613 23:56:07.068"/>
 </kw>
 <kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220613 23:49:16.188" endtime="20220613 23:49:18.276"/>
+<status status="PASS" starttime="20220613 23:56:07.069" endtime="20220613 23:56:09.156"/>
 </kw>
-<status status="PASS" starttime="20220613 23:49:16.187" endtime="20220613 23:49:18.277"/>
+<status status="PASS" starttime="20220613 23:56:07.068" endtime="20220613 23:56:09.156"/>
 </kw>
 <doc>User should be see all document in documents page</doc>
 <tag>Documents Page</tag>
 <tag>FX-M07</tag>
 <tag>Regression</tag>
-<status status="PASS" starttime="20220613 23:49:13.937" endtime="20220613 23:49:18.277"/>
+<status status="PASS" starttime="20220613 23:56:04.071" endtime="20220613 23:56:09.157"/>
 </test>
 <doc>FaustX's Official Website Test Cases, Test numbers are indicated with FX-M0* tags.</doc>
-<status status="PASS" starttime="20220613 23:49:13.738" endtime="20220613 23:49:18.278"/>
+<status status="PASS" starttime="20220613 23:56:03.847" endtime="20220613 23:56:09.158"/>
 </suite>
-<status status="PASS" starttime="20220613 23:49:13.720" endtime="20220613 23:49:18.280"/>
+<status status="PASS" starttime="20220613 23:56:03.828" endtime="20220613 23:56:09.160"/>
 </suite>
 <statistics>
 <total>
