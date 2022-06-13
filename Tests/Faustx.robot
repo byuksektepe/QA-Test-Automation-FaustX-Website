@@ -56,4 +56,8 @@ Homepage Contact Form must be work
     Common.Open FaustX Website    ${SITE_URL}
     FaustxWeb.Begin "Give Your Feedback" Button
 
+User should be see all documents
+    [Documentation]         User should be see all document in documents page
+
+
 
