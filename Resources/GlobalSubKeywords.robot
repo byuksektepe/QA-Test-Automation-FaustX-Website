@@ -27,5 +27,5 @@ Click the element multiple times
 Move to top button test
     [Documentation]    Move to top button tests by each pages
     [Tags]    FX-S02   Move To Top
-    click element
+    Click Element    ${MOVE_TO_TOP_BUTTON}
 
