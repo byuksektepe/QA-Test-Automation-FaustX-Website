@@ -59,7 +59,7 @@ Homepage Contact Form must be work
 User should be see all documents
     [Documentation]         User should be see all document in documents page
     [Tags]    FX-M07    Regression    Documents Page
-    Common.Open FaustX Website    ${SITE_URL}\documents
+    Common.Open FaustX Website    ${SITE_URL}\documents/
 
 
 
