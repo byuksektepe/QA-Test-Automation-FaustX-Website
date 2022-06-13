@@ -52,6 +52,7 @@ Begin "Give Your Feedback" Button
     Homepage.Click "Give Your Feedback" Form
     Contact.Verify Page Loaded
 
+# Documents Tests
 Begin "Documents" index page
 
 
