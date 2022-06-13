@@ -55,7 +55,8 @@ Begin "Give Your Feedback" Button
 
 # Documents Tests
 Begin "Documents" index page
-    Documents.Verify "Terms And Conditions" Document
+    Documents.Verify "Terms And Conditions"
+    Documents.Verify "Privacy Policy"
 
 
 
