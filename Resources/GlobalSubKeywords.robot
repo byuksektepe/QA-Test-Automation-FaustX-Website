@@ -28,4 +28,6 @@ Move to top button test
     [Documentation]    Move to top button tests by each pages
     [Tags]    FX-S02   Move To Top
     Click Element    ${MOVE_TO_TOP_BUTTON}
+    Wait Until Element Is Not Visible    ${MOVE_TO_TOP_BUTTON}
+    element should not be visible
 
