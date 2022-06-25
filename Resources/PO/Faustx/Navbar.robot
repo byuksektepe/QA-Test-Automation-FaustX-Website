@@ -16,7 +16,7 @@ Click about us section
     Click Element                   ${DROPDOWN_SECTION}\[2]/a
     Wait Until Element Is Visible   ${DROPDOWN_CONTENT}\(1)
 Click "Our Vision" Dropdown
-    Click Element
+    Click Element                   ${DROPDOWN_CONTENT}\(1)
 
 
 Click what we do section

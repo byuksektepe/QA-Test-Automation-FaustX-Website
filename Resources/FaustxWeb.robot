@@ -64,6 +64,8 @@ Begin "Documents" index page
 
 Begin "Our Vision" Page
     Navbar.Click about us section
+    Navbar.Click "Our Vision" Dropdown
+    Ourvision.Verify Page Loaded
     Ourvision.Click Our Vision Images On Loop
 
 
