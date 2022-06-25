@@ -5,6 +5,7 @@ Resource    ./PO/Faustx/Footer.robot
 Resource    ./PO/Faustx/Homepage.robot
 Resource    ./PO/Faustx/Contact.robot
 Resource    ./PO/Faustx/Documents.robot
+Resource    ./PO/Faustx/Ourvision.robot
 
 *** Variables ***
 
@@ -60,6 +61,11 @@ Begin "Documents" index page
     Documents.Verify "Privacy Policy"
     Documents.Verify "Cookie Policy"
     Documents.Verify "PDPL Document"
+
+Begin "Our Vision" Page
+    Navbar.Click about us section
+    Ourvision.Click Our Vision Images On Loop
+
 
 
 
