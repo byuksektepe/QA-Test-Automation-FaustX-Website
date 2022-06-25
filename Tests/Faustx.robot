@@ -61,6 +61,8 @@ User should be see all documents
     [Tags]    FX-M07    Regression    Documents Page
     Common.Open FaustX Website    ${SITE_URL}\documents/
     FaustxWeb.Begin "Documents" index page
+User should be click all "Our Vision" Images
+
 
 
 
