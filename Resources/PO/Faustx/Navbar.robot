@@ -15,6 +15,9 @@ Click about us section
     Element Text Should Be          ${DROPDOWN_SECTION}\[2]/a    About Us
     Click Element                   ${DROPDOWN_SECTION}\[2]/a
     Wait Until Element Is Visible   ${DROPDOWN_CONTENT}\(1)
+Click "Our Vision" Dropdown
+    Click Element
+
 
 Click what we do section
     Element Text Should Be          ${DROPDOWN_SECTION}\[3]/a    What We Do
