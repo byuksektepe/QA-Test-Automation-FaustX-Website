@@ -3,7 +3,8 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${CONTACT_PAGE_VERIFY_ELEMENT} =    We focus on visual processing technologies such as target tracking and identification and early warning systems.
-${CLICK_IMAGES} =
+${OUR_VISION_IMAGES_DEFAULT} =    xpath=//div[@class='row fx-gallery']
+@{CLICK_IMAGES} =
 
 *** Keywords ***
 Verify Page Loaded
