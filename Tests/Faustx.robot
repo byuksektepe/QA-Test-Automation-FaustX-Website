@@ -62,6 +62,7 @@ User should be see all documents
     Common.Open FaustX Website    ${SITE_URL}\documents/
     FaustxWeb.Begin "Documents" index page
 User should be click all "Our Vision" Images
+    [Documentation]         User should be see all document in documents page
 
 
 
