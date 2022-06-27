@@ -6,6 +6,7 @@ Resource    ./PO/Faustx/Homepage.robot
 Resource    ./PO/Faustx/Contact.robot
 Resource    ./PO/Faustx/Documents.robot
 Resource    ./PO/Faustx/Ourvision.robot
+Resource    ./PO/Faustx/FX1.Tests.robot
 
 *** Variables ***
 
@@ -67,6 +68,11 @@ Begin "Our Vision" Page
     Navbar.Click "Our Vision" Dropdown
     Ourvision.Verify Page Loaded
     Ourvision.Click Our Vision Images On Loop
+
+Begin "FX-1 Common Release Tests" Page
+    Navbar.Click what we do section
+    Navbar.Click "FX-1 Common Release Tests" Dropdown
+
 
 
 

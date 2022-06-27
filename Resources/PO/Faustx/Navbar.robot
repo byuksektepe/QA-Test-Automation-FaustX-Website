@@ -26,6 +26,7 @@ Click what we do section
 Click "FX-1 Common Release Tests" Dropdown
     Click Element                   ${DROPDOWN_CONTENT}\(6)
 
+
 Click our future section
     Element Text Should Be          ${DROPDOWN_SECTION}\[4]/a    Our Future
     Click Element                   ${DROPDOWN_SECTION}\[4]/a
