@@ -23,6 +23,8 @@ Click what we do section
     Element Text Should Be          ${DROPDOWN_SECTION}\[3]/a    What We Do
     Click Element                   ${DROPDOWN_SECTION}\[3]/a
     Wait Until Element Is Visible   ${DROPDOWN_CONTENT}\(1)
+Click "FX-1 Common Release Tests" Dropdown
+    Click Element                   ${DROPDOWN_CONTENT}\(6)
 
 Click our future section
     Element Text Should Be          ${DROPDOWN_SECTION}\[4]/a    Our Future
