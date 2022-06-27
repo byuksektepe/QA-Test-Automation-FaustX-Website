@@ -73,6 +73,7 @@ Begin "FX-1 Common Release Tests" Page
     Navbar.Click what we do section
     Navbar.Click "FX-1 Common Release Tests" Dropdown
     FX1.Tests.Verify Page Loaded
+    FX1.Tests.Click all FX1 Test images in loop
 
 
 
