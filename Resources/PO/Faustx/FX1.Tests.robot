@@ -3,6 +3,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${FX_1_TESTS_PAGE_VERIFY_ELEMENT} =    xpath=//span[@class='full-width']
+${FX_1_TESTS_DEFAULT} =    xpath=//section
 
 *** Keywords ***
 Verify Page Loaded
