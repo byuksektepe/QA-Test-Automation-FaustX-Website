@@ -63,13 +63,14 @@ User should be see all documents
     FaustxWeb.Begin "Documents" index page
 
 User should be click all "Our Vision" Images
-    [Documentation]         User should be see all document in documents page
+    [Documentation]         User should be able click and see all Our Vision Images
     [Tags]    FX-M08    Smoke    Our Vision Page
     Common.Open FaustX Website    ${SITE_URL}
     FaustxWeb.Begin "Our Vision" Page
 
 User should be anter "FX-1 Common Tests" page and click all test images
-
+    [Documentation]         User should be able click and see all FX1 Test Images/page
+    [Tags]    FX-M08    Smoke    FX1 Test Page
 
 
 
