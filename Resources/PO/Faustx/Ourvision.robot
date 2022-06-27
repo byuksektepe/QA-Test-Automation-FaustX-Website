@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    ../../GlobalVariables.robot
 
 *** Variables ***
 ${OURVISION_PAGE_VERIFY_ELEMENT} =    xpath=//section[contains(@data-background, 'fx-our-vision.png')]
