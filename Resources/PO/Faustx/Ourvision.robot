@@ -5,9 +5,8 @@ Library    SeleniumLibrary
 ${OURVISION_PAGE_VERIFY_ELEMENT} =    xpath=//section[contains(@data-background, 'fx-our-vision.png')]
 
 ${OUR_VISION_IMAGES_DEFAULT} =    xpath=//div[@class='row fx-gallery']//
-@{CLICK_IMAGES} =    a[@href='../img/fx1s/img-hud.png']    a[@href='../img/fx1s/img-cars.png']    a[@href='../img/fx1s/fx1-heli.png']    a[@href='../img/fx1s/img-traffic.png']
-
 ${FANCY_CLOSE} =    //button[contains(@class, 'fancybox-button--close')]
+@{CLICK_IMAGES} =    a[@href='../img/fx1s/img-hud.png']    a[@href='../img/fx1s/img-cars.png']    a[@href='../img/fx1s/fx1-heli.png']    a[@href='../img/fx1s/img-traffic.png']
 
 *** Keywords ***
 Verify Page Loaded
