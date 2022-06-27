@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Resource    ./GlobalVariables.robot
 Resource    ./PO/Faustx/Footer.robot
 
 *** Variables ***
@@ -23,6 +24,16 @@ Click the element multiple times
             Click Element    ${LOCATOR}
             Sleep    ${WAIT}\s
         END
+    END
+
+Click all given elements
+    [Arguments]    ${GIVEN_ELEMENT}
+    ${elements} =    Get WebElements   ${GIVEN_ELEMENT}
+    FOR    ${element}    IN    @{elements}
+        Scroll Element Into View    ${element}
+        Click Element    ${element}
+        Sleep    1s
+        Click Button    ${FANCY_CLOSE}
     END
 
 Move to top button test
