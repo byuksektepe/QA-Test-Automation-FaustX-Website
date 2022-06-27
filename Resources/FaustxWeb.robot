@@ -72,6 +72,8 @@ Begin "Our Vision" Page
 Begin "FX-1 Common Release Tests" Page
     Navbar.Click what we do section
     Navbar.Click "FX-1 Common Release Tests" Dropdown
+    FX1.Tests.Verify Page Loaded
+
 
 
 
