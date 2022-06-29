@@ -68,7 +68,7 @@ User should be click all "Our Vision" Images
     Common.Open FaustX Website    ${SITE_URL}
     FaustxWeb.Begin "Our Vision" Page
 
-User should be anter "FX-1 Common Tests" page and click all test images
+User should be enter "FX-1 Common Tests" page and click all test images
     [Documentation]         User should be able click and see all FX1 Test Images/page
     [Tags]    FX-M09    Smoke    FX1 Test Page
     Common.Open FaustX Website    ${SITE_URL}

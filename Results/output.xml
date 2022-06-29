@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220628 01:31:46.713" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220629 15:24:04.062" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-FaustX-Website\tests">
 <suite id="s1-s1" name="Faustx" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-FaustX-Website\tests\Faustx.robot">
-<test id="s1-s1-t1" name="User should be anter &quot;FX-1 Common Tests&quot; page and click all test images" line="71">
+<test id="s1-s1-t1" name="All users must be enter site" line="16">
 <kw name="Start FaustX Web Test" library="Common" type="SETUP">
 <arg>${BROWSER}</arg>
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -10,34 +10,1788 @@
 <arg>${BROWSER}</arg>
 <arg>add_experimental_option('excludeSwitches', ['enable-logging'])</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220628 01:31:46.965" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220628 01:31:46.964" endtime="20220628 01:31:48.110"/>
+<msg timestamp="20220629 15:24:04.471" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220629 15:24:04.471" endtime="20220629 15:24:05.998"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220628 01:31:48.110" endtime="20220628 01:31:48.230"/>
+<status status="PASS" starttime="20220629 15:24:05.998" endtime="20220629 15:24:06.123"/>
 </kw>
-<status status="PASS" starttime="20220628 01:31:46.964" endtime="20220628 01:31:48.230"/>
+<status status="PASS" starttime="20220629 15:24:04.470" endtime="20220629 15:24:06.123"/>
 </kw>
 <kw name="Open FaustX Website" library="Common">
 <arg>${SITE_URL}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220628 01:31:48.231" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
-<status status="PASS" starttime="20220628 01:31:48.231" endtime="20220628 01:31:50.463"/>
+<msg timestamp="20220629 15:24:06.124" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220629 15:24:06.124" endtime="20220629 15:24:10.436"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>${PRELOADER}</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20220628 01:31:50.463" endtime="20220628 01:31:50.913"/>
+<status status="PASS" starttime="20220629 15:24:10.436" endtime="20220629 15:24:10.920"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${FX_LOGO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220628 01:31:50.914" endtime="20220628 01:31:50.930"/>
+<status status="PASS" starttime="20220629 15:24:10.920" endtime="20220629 15:24:10.939"/>
 </kw>
-<status status="PASS" starttime="20220628 01:31:48.231" endtime="20220628 01:31:50.930"/>
+<status status="PASS" starttime="20220629 15:24:06.124" endtime="20220629 15:24:10.939"/>
+</kw>
+<kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220629 15:24:10.940" endtime="20220629 15:24:13.049"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:10.940" endtime="20220629 15:24:13.049"/>
+</kw>
+<tag>Enter Site</tag>
+<tag>FX-M01</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220629 15:24:04.469" endtime="20220629 15:24:13.050"/>
+</test>
+<test id="s1-s1-t2" name="User should be able to navigate through all dropdown menus" line="20">
+<kw name="Start FaustX Web Test" library="Common" type="SETUP">
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>add_experimental_option('excludeSwitches', ['enable-logging'])</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220629 15:24:13.052" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220629 15:24:13.052" endtime="20220629 15:24:14.108"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220629 15:24:14.108" endtime="20220629 15:24:14.237"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:13.052" endtime="20220629 15:24:14.237"/>
+</kw>
+<kw name="Open FaustX Website" library="Common">
+<arg>${SITE_URL}</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220629 15:24:14.238" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220629 15:24:14.238" endtime="20220629 15:24:17.349"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${PRELOADER}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220629 15:24:17.349" endtime="20220629 15:24:17.808"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FX_LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:17.808" endtime="20220629 15:24:17.825"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:14.237" endtime="20220629 15:24:17.825"/>
+</kw>
+<kw name="Begin &quot;About Us&quot; section" library="FaustxWeb">
+<kw name="Set Variable" library="BuiltIn">
+<var>${SET_CLICK_VAR}</var>
+<arg>click about us section</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220629 15:24:17.827" level="INFO">${SET_CLICK_VAR} = click about us section</msg>
+<status status="PASS" starttime="20220629 15:24:17.826" endtime="20220629 15:24:17.827"/>
+</kw>
+<kw name="Click about us section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[2]/a</arg>
+<arg>About Us</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:17.827" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a' contains exact text 'About Us'.</msg>
+<status status="PASS" starttime="20220629 15:24:17.827" endtime="20220629 15:24:17.846"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:17.846" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:17.846" endtime="20220629 15:24:18.132"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:18.132" endtime="20220629 15:24:18.367"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:17.827" endtime="20220629 15:24:18.368"/>
+</kw>
+<kw name="Click in order dropdown elements" library="Navbar">
+<arg>3</arg>
+<arg>${SET_CLICK_VAR}</arg>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>${ORDER_MAX_RANGE}</value>
+<iter>
+<var name="${i}">1</var>
+<if>
+<branch type="IF" condition="${i} != 5">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(${i})</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:18.369" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220629 15:24:18.369" endtime="20220629 15:24:20.875"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${SET_CLICK_VAR}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Click about us section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[2]/a</arg>
+<arg>About Us</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:20.876" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a' contains exact text 'About Us'.</msg>
+<status status="PASS" starttime="20220629 15:24:20.875" endtime="20220629 15:24:20.891"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:20.892" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:20.892" endtime="20220629 15:24:21.633"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:21.633" endtime="20220629 15:24:21.648"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:20.875" endtime="20220629 15:24:21.648"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:20.875" endtime="20220629 15:24:21.648"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:18.369" endtime="20220629 15:24:21.648"/>
+</branch>
+<status status="PASS" starttime="20220629 15:24:18.369" endtime="20220629 15:24:21.648"/>
+</if>
+<status status="PASS" starttime="20220629 15:24:18.369" endtime="20220629 15:24:21.648"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<if>
+<branch type="IF" condition="${i} != 5">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(${i})</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:21.649" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(2)'.</msg>
+<status status="PASS" starttime="20220629 15:24:21.649" endtime="20220629 15:24:21.824"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${SET_CLICK_VAR}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Click about us section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[2]/a</arg>
+<arg>About Us</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:21.825" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a' contains exact text 'About Us'.</msg>
+<status status="PASS" starttime="20220629 15:24:21.825" endtime="20220629 15:24:21.840"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:21.841" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:21.840" endtime="20220629 15:24:22.566"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:22.566" endtime="20220629 15:24:22.582"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:21.825" endtime="20220629 15:24:22.582"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:21.824" endtime="20220629 15:24:22.582"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:21.649" endtime="20220629 15:24:22.582"/>
+</branch>
+<status status="PASS" starttime="20220629 15:24:21.649" endtime="20220629 15:24:22.582"/>
+</if>
+<status status="PASS" starttime="20220629 15:24:21.648" endtime="20220629 15:24:22.582"/>
+</iter>
+<status status="PASS" starttime="20220629 15:24:18.368" endtime="20220629 15:24:22.582"/>
+</for>
+<status status="PASS" starttime="20220629 15:24:18.368" endtime="20220629 15:24:22.582"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:17.826" endtime="20220629 15:24:22.582"/>
+</kw>
+<kw name="Begin &quot;What We Do&quot; section" library="FaustxWeb">
+<kw name="Set Variable" library="BuiltIn">
+<var>${SET_CLICK_VAR}</var>
+<arg>Click what we do section</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220629 15:24:22.583" level="INFO">${SET_CLICK_VAR} = Click what we do section</msg>
+<status status="PASS" starttime="20220629 15:24:22.583" endtime="20220629 15:24:22.583"/>
+</kw>
+<kw name="Click what we do section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<arg>What We Do</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:22.584" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
+<status status="PASS" starttime="20220629 15:24:22.584" endtime="20220629 15:24:22.603"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:22.603" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:22.603" endtime="20220629 15:24:22.636"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:22.636" endtime="20220629 15:24:22.869"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:22.584" endtime="20220629 15:24:22.869"/>
+</kw>
+<kw name="Click in order dropdown elements" library="Navbar">
+<arg>7</arg>
+<arg>${SET_CLICK_VAR}</arg>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>${ORDER_MAX_RANGE}</value>
+<iter>
+<var name="${i}">1</var>
+<if>
+<branch type="IF" condition="${i} != 5">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(${i})</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:22.870" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220629 15:24:22.870" endtime="20220629 15:24:23.881"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${SET_CLICK_VAR}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Click what we do section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<arg>What We Do</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:23.881" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
+<status status="PASS" starttime="20220629 15:24:23.881" endtime="20220629 15:24:23.899"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:23.900" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:23.900" endtime="20220629 15:24:24.614"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:24.614" endtime="20220629 15:24:24.635"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:23.881" endtime="20220629 15:24:24.635"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:23.881" endtime="20220629 15:24:24.635"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:22.870" endtime="20220629 15:24:24.635"/>
+</branch>
+<status status="PASS" starttime="20220629 15:24:22.869" endtime="20220629 15:24:24.635"/>
+</if>
+<status status="PASS" starttime="20220629 15:24:22.869" endtime="20220629 15:24:24.635"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<if>
+<branch type="IF" condition="${i} != 5">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(${i})</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:24.636" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(2)'.</msg>
+<status status="PASS" starttime="20220629 15:24:24.635" endtime="20220629 15:24:26.632"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${SET_CLICK_VAR}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Click what we do section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<arg>What We Do</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:26.633" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
+<status status="PASS" starttime="20220629 15:24:26.633" endtime="20220629 15:24:26.648"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:26.649" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:26.648" endtime="20220629 15:24:27.425"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:27.425" endtime="20220629 15:24:27.441"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:26.633" endtime="20220629 15:24:27.441"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:26.632" endtime="20220629 15:24:27.441"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:24.635" endtime="20220629 15:24:27.441"/>
+</branch>
+<status status="PASS" starttime="20220629 15:24:24.635" endtime="20220629 15:24:27.441"/>
+</if>
+<status status="PASS" starttime="20220629 15:24:24.635" endtime="20220629 15:24:27.441"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<if>
+<branch type="IF" condition="${i} != 5">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(${i})</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:27.442" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(3)'.</msg>
+<status status="PASS" starttime="20220629 15:24:27.442" endtime="20220629 15:24:30.156"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${SET_CLICK_VAR}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Click what we do section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<arg>What We Do</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:30.157" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
+<status status="PASS" starttime="20220629 15:24:30.157" endtime="20220629 15:24:30.173"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:30.174" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:30.173" endtime="20220629 15:24:30.955"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:30.955" endtime="20220629 15:24:30.970"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:30.156" endtime="20220629 15:24:30.970"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:30.156" endtime="20220629 15:24:30.970"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:27.442" endtime="20220629 15:24:30.970"/>
+</branch>
+<status status="PASS" starttime="20220629 15:24:27.442" endtime="20220629 15:24:30.970"/>
+</if>
+<status status="PASS" starttime="20220629 15:24:27.442" endtime="20220629 15:24:30.970"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<if>
+<branch type="IF" condition="${i} != 5">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(${i})</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:30.971" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(4)'.</msg>
+<status status="PASS" starttime="20220629 15:24:30.971" endtime="20220629 15:24:31.010"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${SET_CLICK_VAR}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Click what we do section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<arg>What We Do</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:31.011" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
+<status status="PASS" starttime="20220629 15:24:31.010" endtime="20220629 15:24:31.023"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:31.024" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:31.023" endtime="20220629 15:24:31.050"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:31.050" endtime="20220629 15:24:31.064"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:31.010" endtime="20220629 15:24:31.064"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:31.010" endtime="20220629 15:24:31.064"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:30.970" endtime="20220629 15:24:31.064"/>
+</branch>
+<status status="PASS" starttime="20220629 15:24:30.970" endtime="20220629 15:24:31.064"/>
+</if>
+<status status="PASS" starttime="20220629 15:24:30.970" endtime="20220629 15:24:31.064"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<if>
+<branch type="IF" condition="${i} != 5">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(${i})</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220629 15:24:31.064" endtime="20220629 15:24:31.064"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${SET_CLICK_VAR}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="NOT RUN" starttime="20220629 15:24:31.064" endtime="20220629 15:24:31.064"/>
+</kw>
+<status status="NOT RUN" starttime="20220629 15:24:31.064" endtime="20220629 15:24:31.064"/>
+</branch>
+<status status="PASS" starttime="20220629 15:24:31.064" endtime="20220629 15:24:31.064"/>
+</if>
+<status status="PASS" starttime="20220629 15:24:31.064" endtime="20220629 15:24:31.064"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<if>
+<branch type="IF" condition="${i} != 5">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(${i})</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:31.065" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(6)'.</msg>
+<status status="PASS" starttime="20220629 15:24:31.065" endtime="20220629 15:24:33.932"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${SET_CLICK_VAR}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Click what we do section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<arg>What We Do</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:33.933" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
+<status status="PASS" starttime="20220629 15:24:33.932" endtime="20220629 15:24:33.948"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:33.948" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:33.948" endtime="20220629 15:24:34.728"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:34.728" endtime="20220629 15:24:34.753"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:33.932" endtime="20220629 15:24:34.753"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:33.932" endtime="20220629 15:24:34.753"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:31.065" endtime="20220629 15:24:34.753"/>
+</branch>
+<status status="PASS" starttime="20220629 15:24:31.064" endtime="20220629 15:24:34.753"/>
+</if>
+<status status="PASS" starttime="20220629 15:24:31.064" endtime="20220629 15:24:34.753"/>
+</iter>
+<status status="PASS" starttime="20220629 15:24:22.869" endtime="20220629 15:24:34.753"/>
+</for>
+<status status="PASS" starttime="20220629 15:24:22.869" endtime="20220629 15:24:34.753"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:22.583" endtime="20220629 15:24:34.753"/>
+</kw>
+<kw name="Begin &quot;Our Future&quot; section" library="FaustxWeb">
+<kw name="Set Variable" library="BuiltIn">
+<var>${SET_CLICK_VAR}</var>
+<arg>Click our future section</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220629 15:24:34.754" level="INFO">${SET_CLICK_VAR} = Click our future section</msg>
+<status status="PASS" starttime="20220629 15:24:34.754" endtime="20220629 15:24:34.754"/>
+</kw>
+<kw name="Click our future section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[4]/a</arg>
+<arg>Our Future</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:34.756" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a' contains exact text 'Our Future'.</msg>
+<status status="PASS" starttime="20220629 15:24:34.755" endtime="20220629 15:24:34.775"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:34.775" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:34.775" endtime="20220629 15:24:34.810"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:34.810" endtime="20220629 15:24:35.050"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:34.755" endtime="20220629 15:24:35.050"/>
+</kw>
+<kw name="Click in order dropdown elements" library="Navbar">
+<arg>3</arg>
+<arg>${SET_CLICK_VAR}</arg>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>${ORDER_MAX_RANGE}</value>
+<iter>
+<var name="${i}">1</var>
+<if>
+<branch type="IF" condition="${i} != 5">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(${i})</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:35.052" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220629 15:24:35.051" endtime="20220629 15:24:35.086"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${SET_CLICK_VAR}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Click our future section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[4]/a</arg>
+<arg>Our Future</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:35.088" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a' contains exact text 'Our Future'.</msg>
+<status status="PASS" starttime="20220629 15:24:35.087" endtime="20220629 15:24:35.100"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:35.100" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:35.100" endtime="20220629 15:24:35.124"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:35.124" endtime="20220629 15:24:35.137"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:35.087" endtime="20220629 15:24:35.137"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:35.087" endtime="20220629 15:24:35.137"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:35.051" endtime="20220629 15:24:35.137"/>
+</branch>
+<status status="PASS" starttime="20220629 15:24:35.051" endtime="20220629 15:24:35.137"/>
+</if>
+<status status="PASS" starttime="20220629 15:24:35.051" endtime="20220629 15:24:35.137"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<if>
+<branch type="IF" condition="${i} != 5">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(${i})</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:35.138" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(2)'.</msg>
+<status status="PASS" starttime="20220629 15:24:35.138" endtime="20220629 15:24:35.172"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${SET_CLICK_VAR}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Click our future section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[4]/a</arg>
+<arg>Our Future</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:35.173" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a' contains exact text 'Our Future'.</msg>
+<status status="PASS" starttime="20220629 15:24:35.173" endtime="20220629 15:24:35.185"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:35.185" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:35.185" endtime="20220629 15:24:35.212"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:35.212" endtime="20220629 15:24:35.226"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:35.173" endtime="20220629 15:24:35.226"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:35.172" endtime="20220629 15:24:35.226"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:35.138" endtime="20220629 15:24:35.226"/>
+</branch>
+<status status="PASS" starttime="20220629 15:24:35.138" endtime="20220629 15:24:35.226"/>
+</if>
+<status status="PASS" starttime="20220629 15:24:35.138" endtime="20220629 15:24:35.227"/>
+</iter>
+<status status="PASS" starttime="20220629 15:24:35.051" endtime="20220629 15:24:35.227"/>
+</for>
+<status status="PASS" starttime="20220629 15:24:35.050" endtime="20220629 15:24:35.227"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:34.754" endtime="20220629 15:24:35.227"/>
+</kw>
+<kw name="Begin &quot;Contact&quot; section" library="FaustxWeb">
+<kw name="Click contact section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[5]/a</arg>
+<arg>Contact</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:35.229" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[5]/a' contains exact text 'Contact'.</msg>
+<status status="PASS" starttime="20220629 15:24:35.228" endtime="20220629 15:24:35.247"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[5]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:35.248" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[5]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:35.247" endtime="20220629 15:24:35.559"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:35.228" endtime="20220629 15:24:35.559"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:35.228" endtime="20220629 15:24:35.559"/>
+</kw>
+<kw name="Begin &quot;Homepage&quot; section" library="FaustxWeb">
+<kw name="click homepage section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[1]/a</arg>
+<arg>Homepage</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:24:35.560" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[1]/a' contains exact text 'Homepage'.</msg>
+<status status="PASS" starttime="20220629 15:24:35.560" endtime="20220629 15:24:35.579"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:35.579" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20220629 15:24:35.579" endtime="20220629 15:24:36.504"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:35.560" endtime="20220629 15:24:36.506"/>
+</kw>
+<kw name="Verify Move To Top Button" library="Homepage">
+<kw name="Move to top button test" library="GlobalSubKeywords">
+<tag>FX-S02</tag>
+<tag>Move To Top</tag>
+<doc>Move to top button tests by each pages</doc>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:24:36.507" endtime="20220629 15:24:36.806"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:36.806" endtime="20220629 15:24:36.822"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:36.506" endtime="20220629 15:24:36.822"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MOVE_TO_TOP_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:36.822" endtime="20220629 15:24:36.838"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MOVE_TO_TOP_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:36.839" level="INFO">Clicking element 'css=.progress-wrap'.</msg>
+<status status="PASS" starttime="20220629 15:24:36.838" endtime="20220629 15:24:37.188"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${MOVE_TO_TOP_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220629 15:24:37.188" endtime="20220629 15:24:38.076"/>
+</kw>
+<kw name="Element Should Not Be Visible" library="SeleniumLibrary">
+<arg>${MOVE_TO_TOP_BUTTON}</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<msg timestamp="20220629 15:24:38.089" level="INFO">Element 'css=.progress-wrap' exists but is not displayed.</msg>
+<status status="PASS" starttime="20220629 15:24:38.076" endtime="20220629 15:24:38.089"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:36.506" endtime="20220629 15:24:38.090"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:36.506" endtime="20220629 15:24:38.090"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:35.559" endtime="20220629 15:24:38.090"/>
+</kw>
+<kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220629 15:24:38.091" endtime="20220629 15:24:40.206"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:38.090" endtime="20220629 15:24:40.206"/>
+</kw>
+<doc>Navbar Menu Tests</doc>
+<tag>FX-M02</tag>
+<tag>Navbar Dropdown Menus</tag>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220629 15:24:13.051" endtime="20220629 15:24:40.206"/>
+</test>
+<test id="s1-s1-t3" name="User should be able to navigate through all footer links" line="31">
+<kw name="Start FaustX Web Test" library="Common" type="SETUP">
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>add_experimental_option('excludeSwitches', ['enable-logging'])</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220629 15:24:40.209" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220629 15:24:40.208" endtime="20220629 15:24:41.266"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220629 15:24:41.266" endtime="20220629 15:24:41.383"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:40.208" endtime="20220629 15:24:41.383"/>
+</kw>
+<kw name="Open FaustX Website" library="Common">
+<arg>${SITE_URL}</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220629 15:24:41.384" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220629 15:24:41.384" endtime="20220629 15:24:44.524"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${PRELOADER}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220629 15:24:44.524" endtime="20220629 15:24:44.976"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FX_LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:44.976" endtime="20220629 15:24:44.994"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:41.384" endtime="20220629 15:24:44.994"/>
+</kw>
+<kw name="Begin &quot;Footer&quot; area" library="FaustxWeb">
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:24:44.995" endtime="20220629 15:24:45.277"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:45.277" endtime="20220629 15:24:45.295"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:44.995" endtime="20220629 15:24:45.296"/>
+</kw>
+<kw name="Click in order footer links" library="Footer">
+<arg>8</arg>
+<for flavor="IN">
+<var>${fl}</var>
+<value>@{FOOTER_LINKS}</value>
+<iter>
+<var name="${fl}">- Our Vision</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:45.297" level="INFO">Clicking link '- Our Vision'.</msg>
+<status status="PASS" starttime="20220629 15:24:45.297" endtime="20220629 15:24:47.781"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:24:47.782" endtime="20220629 15:24:48.052"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:48.052" endtime="20220629 15:24:48.066"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:47.781" endtime="20220629 15:24:48.066"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:45.297" endtime="20220629 15:24:48.066"/>
+</iter>
+<iter>
+<var name="${fl}">- News</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:48.067" level="INFO">Clicking link '- News'.</msg>
+<status status="PASS" starttime="20220629 15:24:48.066" endtime="20220629 15:24:48.483"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:24:48.484" endtime="20220629 15:24:48.753"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:48.753" endtime="20220629 15:24:48.767"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:48.484" endtime="20220629 15:24:48.767"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:48.066" endtime="20220629 15:24:48.767"/>
+</iter>
+<iter>
+<var name="${fl}">- Contact</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:48.767" level="INFO">Clicking link '- Contact'.</msg>
+<status status="PASS" starttime="20220629 15:24:48.767" endtime="20220629 15:24:48.982"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:24:48.983" endtime="20220629 15:24:49.360"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:49.360" endtime="20220629 15:24:49.376"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:48.982" endtime="20220629 15:24:49.376"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:48.767" endtime="20220629 15:24:49.376"/>
+</iter>
+<iter>
+<var name="${fl}">- Terms</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:49.376" level="INFO">Clicking link '- Terms'.</msg>
+<status status="PASS" starttime="20220629 15:24:49.376" endtime="20220629 15:24:49.822"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:24:49.823" endtime="20220629 15:24:50.104"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:50.104" endtime="20220629 15:24:50.120"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:49.822" endtime="20220629 15:24:50.120"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:49.376" endtime="20220629 15:24:50.120"/>
+</iter>
+<iter>
+<var name="${fl}">- Privacy Policy</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:50.121" level="INFO">Clicking link '- Privacy Policy'.</msg>
+<status status="PASS" starttime="20220629 15:24:50.121" endtime="20220629 15:24:50.581"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:24:50.581" endtime="20220629 15:24:50.853"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:50.853" endtime="20220629 15:24:50.869"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:50.581" endtime="20220629 15:24:50.869"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:50.120" endtime="20220629 15:24:50.869"/>
+</iter>
+<iter>
+<var name="${fl}">- Cookie Policy</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:50.870" level="INFO">Clicking link '- Cookie Policy'.</msg>
+<status status="PASS" starttime="20220629 15:24:50.869" endtime="20220629 15:24:51.504"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:24:51.505" endtime="20220629 15:24:51.784"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:51.784" endtime="20220629 15:24:51.798"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:51.505" endtime="20220629 15:24:51.798"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:50.869" endtime="20220629 15:24:51.798"/>
+</iter>
+<iter>
+<var name="${fl}">- PDPL Document</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:51.798" level="INFO">Clicking link '- PDPL Document'.</msg>
+<status status="PASS" starttime="20220629 15:24:51.798" endtime="20220629 15:24:52.309"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:24:52.309" endtime="20220629 15:24:52.576"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:52.576" endtime="20220629 15:24:52.589"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:52.309" endtime="20220629 15:24:52.590"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:51.798" endtime="20220629 15:24:52.590"/>
+</iter>
+<iter>
+<var name="${fl}">- Homepage</var>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${fl}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:24:52.590" level="INFO">Clicking link '- Homepage'.</msg>
+<status status="PASS" starttime="20220629 15:24:52.590" endtime="20220629 15:24:53.151"/>
+</kw>
+<kw name="Scroll to footer" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:24:53.152" endtime="20220629 15:24:53.468"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOCATE_FOOTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:24:53.468" endtime="20220629 15:24:53.483"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:53.151" endtime="20220629 15:24:53.483"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:52.590" endtime="20220629 15:24:53.483"/>
+</iter>
+<status status="PASS" starttime="20220629 15:24:45.296" endtime="20220629 15:24:53.483"/>
+</for>
+<status status="PASS" starttime="20220629 15:24:45.296" endtime="20220629 15:24:53.483"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:44.994" endtime="20220629 15:24:53.483"/>
+</kw>
+<kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220629 15:24:53.484" endtime="20220629 15:24:55.633"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:53.484" endtime="20220629 15:24:55.633"/>
+</kw>
+<doc>Footer Tests</doc>
+<tag>Footer Area</tag>
+<tag>FX-M03</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220629 15:24:40.207" endtime="20220629 15:24:55.634"/>
+</test>
+<test id="s1-s1-t4" name="Main slider should be move and display correct image" line="38">
+<kw name="Start FaustX Web Test" library="Common" type="SETUP">
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>add_experimental_option('excludeSwitches', ['enable-logging'])</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220629 15:24:55.635" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220629 15:24:55.635" endtime="20220629 15:24:56.683"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220629 15:24:56.683" endtime="20220629 15:24:56.812"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:55.635" endtime="20220629 15:24:56.812"/>
+</kw>
+<kw name="Open FaustX Website" library="Common">
+<arg>${SITE_URL}</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220629 15:24:56.813" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220629 15:24:56.813" endtime="20220629 15:24:59.990"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${PRELOADER}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220629 15:24:59.990" endtime="20220629 15:25:00.452"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FX_LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:25:00.452" endtime="20220629 15:25:00.469"/>
+</kw>
+<status status="PASS" starttime="20220629 15:24:56.813" endtime="20220629 15:25:00.470"/>
+</kw>
+<kw name="Main Slider" library="FaustxWeb">
+<kw name="Verify Page Loaded" library="Homepage">
+<doc>Verify "Homepage" is successfully loaded</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NEXT_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:25:00.471" endtime="20220629 15:25:00.488"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:00.470" endtime="20220629 15:25:00.488"/>
+</kw>
+<kw name="Main slider movement" library="Homepage">
+<doc>Check Main Slider, slides and displays correct content</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NEXT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:00.489" level="INFO">Clicking element 'css=div[class='swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer']'.</msg>
+<status status="PASS" starttime="20220629 15:25:00.488" endtime="20220629 15:25:00.652"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220629 15:25:01.661" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:25:00.653" endtime="20220629 15:25:01.661"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>Check slider content</arg>
+<arg>2</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Check slider content" library="Homepage">
+<arg>2</arg>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${SLIDER_NUMBER}</arg>
+<arg>${NUM}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:25:01.662" level="INFO">Verifying element 'xpath=//span[@class='swiper-pagination-current']' contains exact text '2'.</msg>
+<status status="PASS" starttime="20220629 15:25:01.662" endtime="20220629 15:25:01.681"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:01.661" endtime="20220629 15:25:01.681"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:01.661" endtime="20220629 15:25:01.681"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NEXT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:01.681" level="INFO">Clicking element 'css=div[class='swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer']'.</msg>
+<status status="PASS" starttime="20220629 15:25:01.681" endtime="20220629 15:25:01.706"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220629 15:25:02.717" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:25:01.706" endtime="20220629 15:25:02.717"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>Check slider content</arg>
+<arg>1</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Check slider content" library="Homepage">
+<arg>1</arg>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${SLIDER_NUMBER}</arg>
+<arg>${NUM}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:25:02.718" level="INFO">Verifying element 'xpath=//span[@class='swiper-pagination-current']' contains exact text '1'.</msg>
+<status status="PASS" starttime="20220629 15:25:02.718" endtime="20220629 15:25:02.730"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:02.717" endtime="20220629 15:25:02.731"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:02.717" endtime="20220629 15:25:02.731"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PREV_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:02.731" level="INFO">Clicking element 'css=div[class='swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer']'.</msg>
+<status status="PASS" starttime="20220629 15:25:02.731" endtime="20220629 15:25:02.769"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220629 15:25:03.777" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:25:02.769" endtime="20220629 15:25:03.777"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>Check slider content</arg>
+<arg>2</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Check slider content" library="Homepage">
+<arg>2</arg>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${SLIDER_NUMBER}</arg>
+<arg>${NUM}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:25:03.778" level="INFO">Verifying element 'xpath=//span[@class='swiper-pagination-current']' contains exact text '2'.</msg>
+<status status="PASS" starttime="20220629 15:25:03.777" endtime="20220629 15:25:03.788"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:03.777" endtime="20220629 15:25:03.789"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:03.777" endtime="20220629 15:25:03.789"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PREV_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:03.789" level="INFO">Clicking element 'css=div[class='swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer']'.</msg>
+<status status="PASS" starttime="20220629 15:25:03.789" endtime="20220629 15:25:03.813"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220629 15:25:04.825" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:25:03.813" endtime="20220629 15:25:04.825"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>Check slider content</arg>
+<arg>1</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Check slider content" library="Homepage">
+<arg>1</arg>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${SLIDER_NUMBER}</arg>
+<arg>${NUM}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:25:04.826" level="INFO">Verifying element 'xpath=//span[@class='swiper-pagination-current']' contains exact text '1'.</msg>
+<status status="PASS" starttime="20220629 15:25:04.826" endtime="20220629 15:25:04.837"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:04.825" endtime="20220629 15:25:04.837"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:04.825" endtime="20220629 15:25:04.837"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:00.488" endtime="20220629 15:25:04.837"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:00.470" endtime="20220629 15:25:04.837"/>
+</kw>
+<kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220629 15:25:04.838" endtime="20220629 15:25:06.941"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:04.837" endtime="20220629 15:25:06.941"/>
+</kw>
+<doc>Homepage Main Slider Tests</doc>
+<tag>FX-M04</tag>
+<tag>Homepage</tag>
+<tag>Main Slider</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220629 15:24:55.634" endtime="20220629 15:25:06.941"/>
+</test>
+<test id="s1-s1-t5" name="&quot;What We Do&quot; slider should be move and display correct image" line="45">
+<kw name="Start FaustX Web Test" library="Common" type="SETUP">
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>add_experimental_option('excludeSwitches', ['enable-logging'])</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220629 15:25:06.944" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220629 15:25:06.944" endtime="20220629 15:25:08.014"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220629 15:25:08.015" endtime="20220629 15:25:08.141"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:06.943" endtime="20220629 15:25:08.141"/>
+</kw>
+<kw name="Open FaustX Website" library="Common">
+<arg>${SITE_URL}</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220629 15:25:08.142" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220629 15:25:08.142" endtime="20220629 15:25:11.859"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${PRELOADER}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220629 15:25:11.860" endtime="20220629 15:25:12.315"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FX_LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:25:12.315" endtime="20220629 15:25:12.334"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:08.142" endtime="20220629 15:25:12.334"/>
+</kw>
+<kw name="What We Do Slider" library="FaustxWeb">
+<kw name="Verify Page Loaded" library="Homepage">
+<doc>Verify "Homepage" is successfully loaded</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NEXT_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:25:12.335" endtime="20220629 15:25:12.351"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:12.335" endtime="20220629 15:25:12.351"/>
+</kw>
+<kw name="Move &quot;What We Do&quot; Section Slider" library="Homepage">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${SLIDER_VIEW_WWD}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:25:12.351" endtime="20220629 15:25:12.633"/>
+</kw>
+<kw name="Click the element multiple times" library="GlobalSubKeywords">
+<arg>3</arg>
+<arg>ELEMENT</arg>
+<arg>${NEXT_BUTTON_WWD}</arg>
+<arg>2</arg>
+<tag>FX-S01</tag>
+<tag>Multiple Click</tag>
+<doc>Called when a button has to be clicked more than once</doc>
+<if>
+<branch type="IF" condition="&quot;${WHAT?}&quot; == &quot;BUTTON&quot;">
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>${CLICK_REPEAT}</value>
+<iter>
+<var name="${i}"/>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LOCATOR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220629 15:25:12.634" endtime="20220629 15:25:12.634"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${WAIT}\s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220629 15:25:12.634" endtime="20220629 15:25:12.634"/>
+</kw>
+<status status="NOT RUN" starttime="20220629 15:25:12.634" endtime="20220629 15:25:12.635"/>
+</iter>
+<status status="NOT RUN" starttime="20220629 15:25:12.634" endtime="20220629 15:25:12.635"/>
+</for>
+<status status="NOT RUN" starttime="20220629 15:25:12.634" endtime="20220629 15:25:12.635"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${WHAT?}&quot; == &quot;ELEMENT&quot;">
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>${CLICK_REPEAT}</value>
+<iter>
+<var name="${i}">0</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:12.635" level="INFO">Clicking element 'xpath=//div[@class='swiper-container swiper-container-initialized swiper-container-horizontal']/div[@class='swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer']'.</msg>
+<status status="PASS" starttime="20220629 15:25:12.635" endtime="20220629 15:25:12.676"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${WAIT}\s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220629 15:25:14.687" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220629 15:25:12.676" endtime="20220629 15:25:14.687"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:12.635" endtime="20220629 15:25:14.687"/>
+</iter>
+<iter>
+<var name="${i}">1</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:14.688" level="INFO">Clicking element 'xpath=//div[@class='swiper-container swiper-container-initialized swiper-container-horizontal']/div[@class='swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer']'.</msg>
+<status status="PASS" starttime="20220629 15:25:14.687" endtime="20220629 15:25:14.712"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${WAIT}\s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220629 15:25:16.726" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220629 15:25:14.712" endtime="20220629 15:25:16.726"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:14.687" endtime="20220629 15:25:16.726"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:16.726" level="INFO">Clicking element 'xpath=//div[@class='swiper-container swiper-container-initialized swiper-container-horizontal']/div[@class='swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer']'.</msg>
+<status status="PASS" starttime="20220629 15:25:16.726" endtime="20220629 15:25:16.748"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${WAIT}\s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220629 15:25:18.748" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220629 15:25:16.748" endtime="20220629 15:25:18.748"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:16.726" endtime="20220629 15:25:18.748"/>
+</iter>
+<status status="PASS" starttime="20220629 15:25:12.635" endtime="20220629 15:25:18.748"/>
+</for>
+<status status="PASS" starttime="20220629 15:25:12.635" endtime="20220629 15:25:18.748"/>
+</branch>
+<status status="PASS" starttime="20220629 15:25:12.634" endtime="20220629 15:25:18.748"/>
+</if>
+<status status="PASS" starttime="20220629 15:25:12.634" endtime="20220629 15:25:18.748"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:12.351" endtime="20220629 15:25:18.748"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:12.334" endtime="20220629 15:25:18.749"/>
+</kw>
+<kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220629 15:25:18.750" endtime="20220629 15:25:20.851"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:18.749" endtime="20220629 15:25:20.851"/>
+</kw>
+<doc>Homepage Sub Slider Tests</doc>
+<tag>FX-M05</tag>
+<tag>Homepage</tag>
+<tag>Smoke</tag>
+<tag>Sub Slider</tag>
+<status status="PASS" starttime="20220629 15:25:06.942" endtime="20220629 15:25:20.851"/>
+</test>
+<test id="s1-s1-t6" name="Homepage Contact Form must be work" line="52">
+<kw name="Start FaustX Web Test" library="Common" type="SETUP">
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>add_experimental_option('excludeSwitches', ['enable-logging'])</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220629 15:25:20.854" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220629 15:25:20.853" endtime="20220629 15:25:21.916"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220629 15:25:21.916" endtime="20220629 15:25:22.039"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:20.853" endtime="20220629 15:25:22.039"/>
+</kw>
+<kw name="Open FaustX Website" library="Common">
+<arg>${SITE_URL}</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220629 15:25:22.040" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220629 15:25:22.040" endtime="20220629 15:25:25.775"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${PRELOADER}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220629 15:25:25.775" endtime="20220629 15:25:26.229"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FX_LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:25:26.229" endtime="20220629 15:25:26.245"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:22.039" endtime="20220629 15:25:26.246"/>
+</kw>
+<kw name="Begin &quot;Give Your Feedback&quot; Button" library="FaustxWeb">
+<kw name="Click &quot;Give Your Feedback&quot; Form" library="Homepage">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${CONTACT_FORM_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:25:26.247" endtime="20220629 15:25:26.532"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CONTACT_FORM_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:25:26.533" endtime="20220629 15:25:26.554"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CONTACT_FORM_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:26.555" level="INFO">Clicking element 'xpath=//a[.='Contact Form']'.</msg>
+<status status="PASS" starttime="20220629 15:25:26.555" endtime="20220629 15:25:26.762"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:26.246" endtime="20220629 15:25:26.762"/>
+</kw>
+<kw name="Verify Page Loaded" library="Contact">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${CONTACT_PAGE_VERIFY_ELEMENT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220629 15:25:26.763" endtime="20220629 15:25:26.772"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:26.762" endtime="20220629 15:25:26.772"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:26.246" endtime="20220629 15:25:26.772"/>
+</kw>
+<kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220629 15:25:26.773" endtime="20220629 15:25:28.873"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:26.772" endtime="20220629 15:25:28.873"/>
+</kw>
+<doc>Homepage Contact Form Complete Tests</doc>
+<tag>Contact Form</tag>
+<tag>FX-M06</tag>
+<tag>Homepage</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220629 15:25:20.852" endtime="20220629 15:25:28.873"/>
+</test>
+<test id="s1-s1-t7" name="User should be see all documents" line="59">
+<kw name="Start FaustX Web Test" library="Common" type="SETUP">
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>add_experimental_option('excludeSwitches', ['enable-logging'])</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220629 15:25:28.876" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220629 15:25:28.876" endtime="20220629 15:25:29.933"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220629 15:25:29.933" endtime="20220629 15:25:30.051"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:28.876" endtime="20220629 15:25:30.051"/>
+</kw>
+<kw name="Open FaustX Website" library="Common">
+<arg>${SITE_URL}\documents/</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220629 15:25:30.052" level="INFO">Opening url 'https://www.faustx.com/en/documents/'</msg>
+<status status="PASS" starttime="20220629 15:25:30.052" endtime="20220629 15:25:30.604"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${PRELOADER}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220629 15:25:30.604" endtime="20220629 15:25:31.073"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FX_LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:25:31.074" endtime="20220629 15:25:31.092"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:30.051" endtime="20220629 15:25:31.092"/>
+</kw>
+<kw name="Begin &quot;Documents&quot; index page" library="FaustxWeb">
+<kw name="Verify Page Loaded" library="Documents">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Files related to the Company and Products.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220629 15:25:31.093" endtime="20220629 15:25:31.105"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:31.093" endtime="20220629 15:25:31.105"/>
+</kw>
+<kw name="Verify &quot;Terms And Conditions&quot;" library="Documents">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${TERMS_LINK}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:25:31.106" endtime="20220629 15:25:31.386"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${TERMS_LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:31.386" level="INFO">Clicking link 'xpath=//a[@href='terms-and-conditions']'.</msg>
+<status status="PASS" starttime="20220629 15:25:31.386" endtime="20220629 15:25:31.796"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Terms and Conditions (Turkish)</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220629 15:25:31.809" level="INFO">Current page contains text 'Terms and Conditions (Turkish)'.</msg>
+<status status="PASS" starttime="20220629 15:25:31.797" endtime="20220629 15:25:31.809"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220629 15:25:31.809" endtime="20220629 15:25:31.832"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:31.106" endtime="20220629 15:25:31.833"/>
+</kw>
+<kw name="Verify &quot;Privacy Policy&quot;" library="Documents">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${PRIVACY_LINK}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:25:31.833" endtime="20220629 15:25:32.118"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${PRIVACY_LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:32.119" level="INFO">Clicking link 'xpath=//a[@href='privacy-policy']'.</msg>
+<status status="PASS" starttime="20220629 15:25:32.118" endtime="20220629 15:25:32.350"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Privacy Policy (Turkish)</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220629 15:25:32.362" level="INFO">Current page contains text 'Privacy Policy (Turkish)'.</msg>
+<status status="PASS" starttime="20220629 15:25:32.351" endtime="20220629 15:25:32.362"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220629 15:25:32.362" endtime="20220629 15:25:32.384"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:31.833" endtime="20220629 15:25:32.384"/>
+</kw>
+<kw name="Verify &quot;Cookie Policy&quot;" library="Documents">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${COOKIE_LINK}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:25:32.384" endtime="20220629 15:25:32.661"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${COOKIE_LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:32.662" level="INFO">Clicking link 'xpath=//a[@href='cookie-policy']'.</msg>
+<status status="PASS" starttime="20220629 15:25:32.661" endtime="20220629 15:25:32.790"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Cookie Policy (Turkish)</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220629 15:25:32.803" level="INFO">Current page contains text 'Cookie Policy (Turkish)'.</msg>
+<status status="PASS" starttime="20220629 15:25:32.791" endtime="20220629 15:25:32.803"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220629 15:25:32.803" endtime="20220629 15:25:32.826"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:32.384" endtime="20220629 15:25:32.826"/>
+</kw>
+<kw name="Verify &quot;PDPL Document&quot;" library="Documents">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${PDPL_LINK}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:25:32.826" endtime="20220629 15:25:33.098"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${PDPL_LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:33.099" level="INFO">Clicking link 'xpath=//a[@href='personal-data-protection-law']'.</msg>
+<status status="PASS" starttime="20220629 15:25:33.098" endtime="20220629 15:25:33.215"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Document of Personal Data Protection Law (Turkish)</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220629 15:25:33.228" level="INFO">Current page contains text 'Document of Personal Data Protection Law (Turkish)'.</msg>
+<status status="PASS" starttime="20220629 15:25:33.215" endtime="20220629 15:25:33.228"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220629 15:25:33.228" endtime="20220629 15:25:33.250"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:32.826" endtime="20220629 15:25:33.250"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:31.092" endtime="20220629 15:25:33.250"/>
+</kw>
+<kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220629 15:25:33.251" endtime="20220629 15:25:35.354"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:33.251" endtime="20220629 15:25:35.354"/>
+</kw>
+<doc>User should be see all document in documents page</doc>
+<tag>Documents Page</tag>
+<tag>FX-M07</tag>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220629 15:25:28.874" endtime="20220629 15:25:35.355"/>
+</test>
+<test id="s1-s1-t8" name="User should be click all &quot;Our Vision&quot; Images" line="65">
+<kw name="Start FaustX Web Test" library="Common" type="SETUP">
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>add_experimental_option('excludeSwitches', ['enable-logging'])</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220629 15:25:35.357" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220629 15:25:35.357" endtime="20220629 15:25:36.395"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220629 15:25:36.396" endtime="20220629 15:25:36.517"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:35.357" endtime="20220629 15:25:36.518"/>
+</kw>
+<kw name="Open FaustX Website" library="Common">
+<arg>${SITE_URL}</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220629 15:25:36.519" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220629 15:25:36.519" endtime="20220629 15:25:39.688"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${PRELOADER}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220629 15:25:39.688" endtime="20220629 15:25:40.150"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FX_LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:25:40.150" endtime="20220629 15:25:40.168"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:36.518" endtime="20220629 15:25:40.168"/>
+</kw>
+<kw name="Begin &quot;Our Vision&quot; Page" library="FaustxWeb">
+<kw name="Click about us section" library="Navbar">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[2]/a</arg>
+<arg>About Us</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220629 15:25:40.169" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a' contains exact text 'About Us'.</msg>
+<status status="PASS" starttime="20220629 15:25:40.169" endtime="20220629 15:25:40.190"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_SECTION}\[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:40.190" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220629 15:25:40.190" endtime="20220629 15:25:40.492"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:25:40.492" endtime="20220629 15:25:40.510"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:40.169" endtime="20220629 15:25:40.510"/>
+</kw>
+<kw name="Click &quot;Our Vision&quot; Dropdown" library="Navbar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DROPDOWN_CONTENT}\(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:40.511" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220629 15:25:40.511" endtime="20220629 15:25:43.056"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:40.510" endtime="20220629 15:25:43.056"/>
+</kw>
+<kw name="Verify Page Loaded" library="Ourvision">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${OURVISION_PAGE_VERIFY_ELEMENT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:25:43.056" endtime="20220629 15:25:43.074"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:43.056" endtime="20220629 15:25:43.074"/>
+</kw>
+<kw name="Click Our Vision Images On Loop" library="Ourvision">
+<for flavor="IN">
+<var>${IMAGE}</var>
+<value>@{CLICK_IMAGES}</value>
+<iter>
+<var name="${IMAGE}">a[@href='../img/fx1s/img-hud.png']</var>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${OUR_VISION_IMAGES_DEFAULT}${IMAGE}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:25:43.074" endtime="20220629 15:25:43.384"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${OUR_VISION_IMAGES_DEFAULT}${IMAGE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:43.385" level="INFO">Clicking element 'xpath=//div[@class='row fx-gallery']//a[@href='../img/fx1s/img-hud.png']'.</msg>
+<status status="PASS" starttime="20220629 15:25:43.384" endtime="20220629 15:25:43.819"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220629 15:25:44.332" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20220629 15:25:43.819" endtime="20220629 15:25:44.332"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${FANCY_CLOSE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:44.333" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:25:44.332" endtime="20220629 15:25:44.385"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:43.074" endtime="20220629 15:25:44.385"/>
+</iter>
+<iter>
+<var name="${IMAGE}">a[@href='../img/fx1s/img-cars.png']</var>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${OUR_VISION_IMAGES_DEFAULT}${IMAGE}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:25:44.385" endtime="20220629 15:25:44.659"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${OUR_VISION_IMAGES_DEFAULT}${IMAGE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:44.660" level="INFO">Clicking element 'xpath=//div[@class='row fx-gallery']//a[@href='../img/fx1s/img-cars.png']'.</msg>
+<status status="PASS" starttime="20220629 15:25:44.659" endtime="20220629 15:25:44.784"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220629 15:25:45.297" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20220629 15:25:44.784" endtime="20220629 15:25:45.297"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${FANCY_CLOSE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:45.297" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:25:45.297" endtime="20220629 15:25:45.346"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:44.385" endtime="20220629 15:25:45.346"/>
+</iter>
+<iter>
+<var name="${IMAGE}">a[@href='../img/fx1s/fx1-heli.png']</var>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${OUR_VISION_IMAGES_DEFAULT}${IMAGE}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:25:45.346" endtime="20220629 15:25:45.624"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${OUR_VISION_IMAGES_DEFAULT}${IMAGE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:45.625" level="INFO">Clicking element 'xpath=//div[@class='row fx-gallery']//a[@href='../img/fx1s/fx1-heli.png']'.</msg>
+<status status="PASS" starttime="20220629 15:25:45.625" endtime="20220629 15:25:45.750"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220629 15:25:46.261" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20220629 15:25:45.750" endtime="20220629 15:25:46.261"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${FANCY_CLOSE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:46.261" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:25:46.261" endtime="20220629 15:25:46.308"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:45.346" endtime="20220629 15:25:46.308"/>
+</iter>
+<iter>
+<var name="${IMAGE}">a[@href='../img/fx1s/img-traffic.png']</var>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${OUR_VISION_IMAGES_DEFAULT}${IMAGE}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220629 15:25:46.309" endtime="20220629 15:25:46.591"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${OUR_VISION_IMAGES_DEFAULT}${IMAGE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:46.592" level="INFO">Clicking element 'xpath=//div[@class='row fx-gallery']//a[@href='../img/fx1s/img-traffic.png']'.</msg>
+<status status="PASS" starttime="20220629 15:25:46.591" endtime="20220629 15:25:46.714"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220629 15:25:47.223" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20220629 15:25:46.715" endtime="20220629 15:25:47.223"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${FANCY_CLOSE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220629 15:25:47.223" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:25:47.223" endtime="20220629 15:25:47.270"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:46.308" endtime="20220629 15:25:47.270"/>
+</iter>
+<status status="PASS" starttime="20220629 15:25:43.074" endtime="20220629 15:25:47.270"/>
+</for>
+<status status="PASS" starttime="20220629 15:25:43.074" endtime="20220629 15:25:47.271"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:40.169" endtime="20220629 15:25:47.271"/>
+</kw>
+<kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220629 15:25:47.272" endtime="20220629 15:25:49.402"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:47.271" endtime="20220629 15:25:49.402"/>
+</kw>
+<doc>User should be able click and see all Our Vision Images</doc>
+<tag>FX-M08</tag>
+<tag>Our Vision Page</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220629 15:25:35.356" endtime="20220629 15:25:49.403"/>
+</test>
+<test id="s1-s1-t9" name="User should be anter &quot;FX-1 Common Tests&quot; page and click all test images" line="71">
+<kw name="Start FaustX Web Test" library="Common" type="SETUP">
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>add_experimental_option('excludeSwitches', ['enable-logging'])</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220629 15:25:49.405" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220629 15:25:49.405" endtime="20220629 15:25:50.480"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220629 15:25:50.480" endtime="20220629 15:25:50.606"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:49.404" endtime="20220629 15:25:50.606"/>
+</kw>
+<kw name="Open FaustX Website" library="Common">
+<arg>${SITE_URL}</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220629 15:25:50.607" level="INFO">Opening url 'https://www.faustx.com/en/'</msg>
+<status status="PASS" starttime="20220629 15:25:50.607" endtime="20220629 15:25:53.756"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${PRELOADER}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220629 15:25:53.757" endtime="20220629 15:25:54.210"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FX_LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220629 15:25:54.211" endtime="20220629 15:25:54.229"/>
+</kw>
+<status status="PASS" starttime="20220629 15:25:50.606" endtime="20220629 15:25:54.229"/>
 </kw>
 <kw name="Begin &quot;FX-1 Common Release Tests&quot; Page" library="FaustxWeb">
 <kw name="Click what we do section" library="Navbar">
@@ -45,45 +1799,45 @@
 <arg>${DROPDOWN_SECTION}\[3]/a</arg>
 <arg>What We Do</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220628 01:31:50.932" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
-<status status="PASS" starttime="20220628 01:31:50.931" endtime="20220628 01:31:50.956"/>
+<msg timestamp="20220629 15:25:54.230" level="INFO">Verifying element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a' contains exact text 'What We Do'.</msg>
+<status status="PASS" starttime="20220629 15:25:54.230" endtime="20220629 15:25:54.251"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${DROPDOWN_SECTION}\[3]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:31:50.958" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
-<status status="PASS" starttime="20220628 01:31:50.957" endtime="20220628 01:31:51.253"/>
+<msg timestamp="20220629 15:25:54.252" level="INFO">Clicking element 'xpath=//*[@id="navbarSupportedContent"]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20220629 15:25:54.252" endtime="20220629 15:25:54.550"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${DROPDOWN_CONTENT}\(1)</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220628 01:31:51.253" endtime="20220628 01:31:51.488"/>
+<status status="PASS" starttime="20220629 15:25:54.550" endtime="20220629 15:25:54.785"/>
 </kw>
-<status status="PASS" starttime="20220628 01:31:50.931" endtime="20220628 01:31:51.488"/>
+<status status="PASS" starttime="20220629 15:25:54.230" endtime="20220629 15:25:54.785"/>
 </kw>
 <kw name="Click &quot;FX-1 Common Release Tests&quot; Dropdown" library="Navbar">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${DROPDOWN_CONTENT}\(6)</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:31:51.489" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(6)'.</msg>
-<status status="PASS" starttime="20220628 01:31:51.489" endtime="20220628 01:31:54.336"/>
+<msg timestamp="20220629 15:25:54.786" level="INFO">Clicking element 'css=#navbarSupportedContent &gt; ul &gt; li.nav-item.dropdown.show &gt; div &gt; a:nth-child(6)'.</msg>
+<status status="PASS" starttime="20220629 15:25:54.785" endtime="20220629 15:25:59.107"/>
 </kw>
-<status status="PASS" starttime="20220628 01:31:51.488" endtime="20220628 01:31:54.336"/>
+<status status="PASS" starttime="20220629 15:25:54.785" endtime="20220629 15:25:59.108"/>
 </kw>
 <kw name="Verify Page Loaded" library="FX1.Tests">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${FX_1_TESTS_PAGE_VERIFY_ELEMENT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220628 01:31:54.336" endtime="20220628 01:31:54.353"/>
+<status status="PASS" starttime="20220629 15:25:59.108" endtime="20220629 15:25:59.125"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${FX_1_TESTS_PAGE_VERIFY_ELEMENT}</arg>
 <arg>FX-1ALL</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220628 01:31:54.353" level="INFO">Verifying element 'xpath=//span[@class='full-width']' contains exact text 'FX-1ALL'.</msg>
-<status status="PASS" starttime="20220628 01:31:54.353" endtime="20220628 01:31:54.376"/>
+<msg timestamp="20220629 15:25:59.126" level="INFO">Verifying element 'xpath=//span[@class='full-width']' contains exact text 'FX-1ALL'.</msg>
+<status status="PASS" starttime="20220629 15:25:59.125" endtime="20220629 15:25:59.141"/>
 </kw>
-<status status="PASS" starttime="20220628 01:31:54.336" endtime="20220628 01:31:54.378"/>
+<status status="PASS" starttime="20220629 15:25:59.108" endtime="20220629 15:25:59.141"/>
 </kw>
 <kw name="Click all FX1 Test images in loop" library="FX1.Tests">
 <kw name="Click all given elements" library="GlobalSubKeywords">
@@ -92,536 +1846,554 @@
 <var>${elements}</var>
 <arg>${GIVEN_ELEMENT}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<msg timestamp="20220628 01:31:54.387" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="83e66c04-f405-470b-8687-0fd32074bbff")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20220628 01:31:54.378" endtime="20220628 01:31:54.387"/>
+<msg timestamp="20220629 15:25:59.151" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="299adcb2-a153-44ea-a5a6-f0cc1f688022")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20220629 15:25:59.141" endtime="20220629 15:25:59.151"/>
 </kw>
 <for flavor="IN">
 <var>${element}</var>
 <value>@{elements}</value>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="83e66c04-f405-470b-8687-0fd32074bbff")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="299adcb2-a153-44ea-a5a6-f0cc1f688022")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:31:54.387" endtime="20220628 01:31:54.667"/>
+<status status="PASS" starttime="20220629 15:25:59.151" endtime="20220629 15:25:59.422"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:31:54.667" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="83e66c04-f405-470b-8687-0fd32074bbff")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:31:54.667" endtime="20220628 01:31:55.114"/>
+<msg timestamp="20220629 15:25:59.423" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="299adcb2-a153-44ea-a5a6-f0cc1f688022")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:25:59.423" endtime="20220629 15:25:59.871"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:31:56.117" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:31:55.114" endtime="20220628 01:31:56.117"/>
+<msg timestamp="20220629 15:26:00.882" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:25:59.871" endtime="20220629 15:26:00.882"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:31:56.118" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:31:56.117" endtime="20220628 01:31:56.230"/>
+<msg timestamp="20220629 15:26:00.883" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:00.882" endtime="20220629 15:26:00.954"/>
 </kw>
-<status status="PASS" starttime="20220628 01:31:54.387" endtime="20220628 01:31:56.231"/>
+<status status="PASS" starttime="20220629 15:25:59.151" endtime="20220629 15:26:00.955"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="fd290a0d-2876-40cd-b6f1-1a9ea694e662")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="f737dc30-2cc9-48b3-81c8-f65a9db99ed1")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:31:56.231" endtime="20220628 01:31:56.507"/>
+<status status="PASS" starttime="20220629 15:26:00.955" endtime="20220629 15:26:01.237"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:31:56.508" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="fd290a0d-2876-40cd-b6f1-1a9ea694e662")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:31:56.507" endtime="20220628 01:31:56.649"/>
+<msg timestamp="20220629 15:26:01.238" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="f737dc30-2cc9-48b3-81c8-f65a9db99ed1")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:01.237" endtime="20220629 15:26:01.378"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:31:57.661" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:31:56.649" endtime="20220628 01:31:57.661"/>
+<msg timestamp="20220629 15:26:02.380" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:01.378" endtime="20220629 15:26:02.380"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:31:57.661" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:31:57.661" endtime="20220628 01:31:57.708"/>
+<msg timestamp="20220629 15:26:02.380" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:02.380" endtime="20220629 15:26:02.427"/>
 </kw>
-<status status="PASS" starttime="20220628 01:31:56.231" endtime="20220628 01:31:57.708"/>
+<status status="PASS" starttime="20220629 15:26:00.955" endtime="20220629 15:26:02.427"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="468837c6-7073-4cef-b24a-dc9dd4564b86")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="3ca11133-cce5-4f3c-8f1c-37abd39bee18")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:31:57.708" endtime="20220628 01:31:57.972"/>
+<status status="PASS" starttime="20220629 15:26:02.428" endtime="20220629 15:26:02.694"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:31:57.972" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="468837c6-7073-4cef-b24a-dc9dd4564b86")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:31:57.972" endtime="20220628 01:31:58.168"/>
+<msg timestamp="20220629 15:26:02.694" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="3ca11133-cce5-4f3c-8f1c-37abd39bee18")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:02.694" endtime="20220629 15:26:02.874"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:31:59.180" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:31:58.168" endtime="20220628 01:31:59.180"/>
+<msg timestamp="20220629 15:26:03.877" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:02.874" endtime="20220629 15:26:03.877"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:31:59.180" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:31:59.180" endtime="20220628 01:31:59.225"/>
+<msg timestamp="20220629 15:26:03.877" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:03.877" endtime="20220629 15:26:03.930"/>
 </kw>
-<status status="PASS" starttime="20220628 01:31:57.708" endtime="20220628 01:31:59.225"/>
+<status status="PASS" starttime="20220629 15:26:02.428" endtime="20220629 15:26:03.930"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="550fa06f-0f9f-41bd-a186-144cf672007e")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="1ad68c14-c25b-43a0-bf12-907baecb579c")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:31:59.225" endtime="20220628 01:31:59.493"/>
+<status status="PASS" starttime="20220629 15:26:03.930" endtime="20220629 15:26:04.207"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:31:59.494" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="550fa06f-0f9f-41bd-a186-144cf672007e")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:31:59.493" endtime="20220628 01:31:59.657"/>
+<msg timestamp="20220629 15:26:04.208" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="1ad68c14-c25b-43a0-bf12-907baecb579c")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:04.207" endtime="20220629 15:26:04.331"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:00.669" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:31:59.657" endtime="20220628 01:32:00.669"/>
+<msg timestamp="20220629 15:26:05.341" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:04.331" endtime="20220629 15:26:05.341"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:00.669" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:00.669" endtime="20220628 01:32:00.713"/>
+<msg timestamp="20220629 15:26:05.342" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:05.341" endtime="20220629 15:26:05.389"/>
 </kw>
-<status status="PASS" starttime="20220628 01:31:59.225" endtime="20220628 01:32:00.713"/>
+<status status="PASS" starttime="20220629 15:26:03.930" endtime="20220629 15:26:05.389"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="7ea8024b-4d39-4454-99d3-4740f8df675f")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="d664155c-5c4d-4d34-9c79-c32040e2055b")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:00.714" endtime="20220628 01:32:00.983"/>
+<status status="PASS" starttime="20220629 15:26:05.389" endtime="20220629 15:26:05.652"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:00.983" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="7ea8024b-4d39-4454-99d3-4740f8df675f")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:00.983" endtime="20220628 01:32:01.155"/>
+<msg timestamp="20220629 15:26:05.653" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="d664155c-5c4d-4d34-9c79-c32040e2055b")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:05.652" endtime="20220629 15:26:05.835"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:02.159" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:01.155" endtime="20220628 01:32:02.159"/>
+<msg timestamp="20220629 15:26:06.849" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:05.835" endtime="20220629 15:26:06.849"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:02.160" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:02.159" endtime="20220628 01:32:02.224"/>
+<msg timestamp="20220629 15:26:06.849" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:06.849" endtime="20220629 15:26:06.916"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:00.714" endtime="20220628 01:32:02.224"/>
+<status status="PASS" starttime="20220629 15:26:05.389" endtime="20220629 15:26:06.916"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="934e81e8-6434-45de-ad87-950e5f56c4e0")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="4dbb4f65-6650-4561-b941-309c151487c3")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:02.225" endtime="20220628 01:32:02.504"/>
+<status status="PASS" starttime="20220629 15:26:06.916" endtime="20220629 15:26:07.189"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:02.504" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="934e81e8-6434-45de-ad87-950e5f56c4e0")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:02.504" endtime="20220628 01:32:02.640"/>
+<msg timestamp="20220629 15:26:07.189" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="4dbb4f65-6650-4561-b941-309c151487c3")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:07.189" endtime="20220629 15:26:07.315"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:03.656" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:02.640" endtime="20220628 01:32:03.656"/>
+<msg timestamp="20220629 15:26:08.329" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:07.315" endtime="20220629 15:26:08.329"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:03.656" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:03.656" endtime="20220628 01:32:03.701"/>
+<msg timestamp="20220629 15:26:08.329" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:08.329" endtime="20220629 15:26:08.373"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:02.225" endtime="20220628 01:32:03.701"/>
+<status status="PASS" starttime="20220629 15:26:06.916" endtime="20220629 15:26:08.373"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="119405bd-6909-4246-856b-898d47bd0e3e")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="dd2b9c93-d535-41ff-9ce2-71552c981915")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:03.701" endtime="20220628 01:32:03.968"/>
+<status status="PASS" starttime="20220629 15:26:08.373" endtime="20220629 15:26:08.638"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:03.968" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="119405bd-6909-4246-856b-898d47bd0e3e")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:03.968" endtime="20220628 01:32:04.133"/>
+<msg timestamp="20220629 15:26:08.638" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="dd2b9c93-d535-41ff-9ce2-71552c981915")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:08.638" endtime="20220629 15:26:08.816"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:05.139" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:04.134" endtime="20220628 01:32:05.139"/>
+<msg timestamp="20220629 15:26:09.824" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:08.816" endtime="20220629 15:26:09.824"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:05.139" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:05.139" endtime="20220628 01:32:05.184"/>
+<msg timestamp="20220629 15:26:09.824" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:09.824" endtime="20220629 15:26:09.870"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:03.701" endtime="20220628 01:32:05.185"/>
+<status status="PASS" starttime="20220629 15:26:08.373" endtime="20220629 15:26:09.870"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="1787fb4d-614d-4d74-898b-4b4981e59f29")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="a3b57311-a2a0-41e7-95c5-5d6004759f41")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:05.185" endtime="20220628 01:32:05.466"/>
+<status status="PASS" starttime="20220629 15:26:09.870" endtime="20220629 15:26:10.140"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:05.466" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="1787fb4d-614d-4d74-898b-4b4981e59f29")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:05.466" endtime="20220628 01:32:05.635"/>
+<msg timestamp="20220629 15:26:10.140" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="a3b57311-a2a0-41e7-95c5-5d6004759f41")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:10.140" endtime="20220629 15:26:10.277"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:06.637" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:05.635" endtime="20220628 01:32:06.637"/>
+<msg timestamp="20220629 15:26:11.284" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:10.278" endtime="20220629 15:26:11.284"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:06.638" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:06.637" endtime="20220628 01:32:06.702"/>
+<msg timestamp="20220629 15:26:11.284" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:11.284" endtime="20220629 15:26:11.346"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:05.185" endtime="20220628 01:32:06.702"/>
+<status status="PASS" starttime="20220629 15:26:09.870" endtime="20220629 15:26:11.346"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="a0591614-a24e-4df5-89a1-0a6aada14dea")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="3890bf2f-3670-4f15-a671-75fad5a2338e")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:06.703" endtime="20220628 01:32:06.980"/>
+<status status="PASS" starttime="20220629 15:26:11.346" endtime="20220629 15:26:11.626"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:06.980" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="a0591614-a24e-4df5-89a1-0a6aada14dea")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:06.980" endtime="20220628 01:32:07.117"/>
+<msg timestamp="20220629 15:26:11.626" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="3890bf2f-3670-4f15-a671-75fad5a2338e")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:11.626" endtime="20220629 15:26:11.761"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:08.118" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:07.117" endtime="20220628 01:32:08.118"/>
+<msg timestamp="20220629 15:26:12.773" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:11.762" endtime="20220629 15:26:12.773"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:08.118" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:08.118" endtime="20220628 01:32:08.164"/>
+<msg timestamp="20220629 15:26:12.774" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:12.773" endtime="20220629 15:26:12.818"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:06.703" endtime="20220628 01:32:08.164"/>
+<status status="PASS" starttime="20220629 15:26:11.346" endtime="20220629 15:26:12.819"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="fca5664a-41e7-48a5-acb9-b0a7f23bda37")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="dbda3507-e339-4082-a1bc-7d1111d63f06")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:08.165" endtime="20220628 01:32:08.442"/>
+<status status="PASS" starttime="20220629 15:26:12.819" endtime="20220629 15:26:13.085"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:08.443" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="fca5664a-41e7-48a5-acb9-b0a7f23bda37")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:08.442" endtime="20220628 01:32:08.620"/>
+<msg timestamp="20220629 15:26:13.086" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="dbda3507-e339-4082-a1bc-7d1111d63f06")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:13.086" endtime="20220629 15:26:13.278"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:09.621" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:08.621" endtime="20220628 01:32:09.621"/>
+<msg timestamp="20220629 15:26:14.281" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:13.278" endtime="20220629 15:26:14.281"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:09.621" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:09.621" endtime="20220628 01:32:09.668"/>
+<msg timestamp="20220629 15:26:14.281" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:14.281" endtime="20220629 15:26:14.328"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:08.164" endtime="20220628 01:32:09.668"/>
+<status status="PASS" starttime="20220629 15:26:12.819" endtime="20220629 15:26:14.328"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="d0b6fcfb-0def-4e93-9410-8f5a68b6367f")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="83556268-9de5-4bf0-b4b1-05c172c655fb")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:09.669" endtime="20220628 01:32:09.931"/>
+<status status="PASS" starttime="20220629 15:26:14.329" endtime="20220629 15:26:14.588"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:09.931" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="d0b6fcfb-0def-4e93-9410-8f5a68b6367f")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:09.931" endtime="20220628 01:32:10.105"/>
+<msg timestamp="20220629 15:26:14.589" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="83556268-9de5-4bf0-b4b1-05c172c655fb")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:14.588" endtime="20220629 15:26:14.772"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:11.107" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:10.105" endtime="20220628 01:32:11.107"/>
+<msg timestamp="20220629 15:26:15.778" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:14.772" endtime="20220629 15:26:15.778"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:11.108" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:11.107" endtime="20220628 01:32:11.173"/>
+<msg timestamp="20220629 15:26:15.778" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:15.778" endtime="20220629 15:26:15.841"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:09.669" endtime="20220628 01:32:11.173"/>
+<status status="PASS" starttime="20220629 15:26:14.329" endtime="20220629 15:26:15.841"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="a5dfe1ef-7012-4aed-ada2-7925838ecc18")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="3455adfe-6ab9-4334-b877-2783ba01d56a")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:11.174" endtime="20220628 01:32:11.448"/>
+<status status="PASS" starttime="20220629 15:26:15.841" endtime="20220629 15:26:16.106"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:11.449" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="a5dfe1ef-7012-4aed-ada2-7925838ecc18")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:11.448" endtime="20220628 01:32:11.580"/>
+<msg timestamp="20220629 15:26:16.106" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="3455adfe-6ab9-4334-b877-2783ba01d56a")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:16.106" endtime="20220629 15:26:16.288"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:12.585" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:11.580" endtime="20220628 01:32:12.585"/>
+<msg timestamp="20220629 15:26:17.294" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:16.288" endtime="20220629 15:26:17.294"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:12.585" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:12.585" endtime="20220628 01:32:12.628"/>
+<msg timestamp="20220629 15:26:17.295" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:17.294" endtime="20220629 15:26:17.339"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:11.174" endtime="20220628 01:32:12.628"/>
+<status status="PASS" starttime="20220629 15:26:15.841" endtime="20220629 15:26:17.339"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="ea555b8e-a145-4db7-9edb-dc8e7e1af74c")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="6667fb92-d57a-46f3-abe9-aa273a819f2f")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:12.629" endtime="20220628 01:32:12.897"/>
+<status status="PASS" starttime="20220629 15:26:17.339" endtime="20220629 15:26:17.607"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:12.897" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="ea555b8e-a145-4db7-9edb-dc8e7e1af74c")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:12.897" endtime="20220628 01:32:13.076"/>
+<msg timestamp="20220629 15:26:17.608" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="6667fb92-d57a-46f3-abe9-aa273a819f2f")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:17.607" endtime="20220629 15:26:17.785"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:14.082" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:13.077" endtime="20220628 01:32:14.082"/>
+<msg timestamp="20220629 15:26:18.792" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:17.786" endtime="20220629 15:26:18.792"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:14.082" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:14.082" endtime="20220628 01:32:14.126"/>
+<msg timestamp="20220629 15:26:18.793" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:18.792" endtime="20220629 15:26:18.842"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:12.629" endtime="20220628 01:32:14.126"/>
+<status status="PASS" starttime="20220629 15:26:17.339" endtime="20220629 15:26:18.842"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="d6006277-c34d-4a57-b721-cae70be5f35e")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="0b39608f-5868-4db5-9a13-114181f7560a")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:14.127" endtime="20220628 01:32:14.394"/>
+<status status="PASS" starttime="20220629 15:26:18.842" endtime="20220629 15:26:19.104"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:14.394" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="d6006277-c34d-4a57-b721-cae70be5f35e")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:14.394" endtime="20220628 01:32:14.570"/>
+<msg timestamp="20220629 15:26:19.104" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="0b39608f-5868-4db5-9a13-114181f7560a")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:19.104" endtime="20220629 15:26:19.282"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:15.585" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:14.570" endtime="20220628 01:32:15.585"/>
+<msg timestamp="20220629 15:26:20.286" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:19.283" endtime="20220629 15:26:20.286"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:15.586" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:15.585" endtime="20220628 01:32:15.666"/>
+<msg timestamp="20220629 15:26:20.286" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:20.286" endtime="20220629 15:26:20.362"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:14.126" endtime="20220628 01:32:15.666"/>
+<status status="PASS" starttime="20220629 15:26:18.842" endtime="20220629 15:26:20.362"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="bb927a39-bb7b-4730-ac03-b323f74c68e4")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="9d8cdd2b-b9ee-4d24-9869-06e32cc5397a")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:15.667" endtime="20220628 01:32:15.946"/>
+<status status="PASS" starttime="20220629 15:26:20.362" endtime="20220629 15:26:20.648"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:15.946" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="bb927a39-bb7b-4730-ac03-b323f74c68e4")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:15.946" endtime="20220628 01:32:16.087"/>
+<msg timestamp="20220629 15:26:20.649" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="9d8cdd2b-b9ee-4d24-9869-06e32cc5397a")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:20.648" endtime="20220629 15:26:20.779"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:17.097" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:16.087" endtime="20220628 01:32:17.097"/>
+<msg timestamp="20220629 15:26:21.785" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:20.779" endtime="20220629 15:26:21.785"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:17.098" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:17.097" endtime="20220628 01:32:17.143"/>
+<msg timestamp="20220629 15:26:21.786" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:21.785" endtime="20220629 15:26:21.830"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:15.666" endtime="20220628 01:32:17.143"/>
+<status status="PASS" starttime="20220629 15:26:20.362" endtime="20220629 15:26:21.830"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="f28bb5be-0c2d-4c6e-8e44-f7c6d8d845d9")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="6848e0fd-c6eb-44bb-af99-1dfbfea01672")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:17.143" endtime="20220628 01:32:17.424"/>
+<status status="PASS" starttime="20220629 15:26:21.831" endtime="20220629 15:26:22.110"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:17.425" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="f28bb5be-0c2d-4c6e-8e44-f7c6d8d845d9")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:17.424" endtime="20220628 01:32:17.548"/>
+<msg timestamp="20220629 15:26:22.110" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="6848e0fd-c6eb-44bb-af99-1dfbfea01672")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:22.110" endtime="20220629 15:26:22.279"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:18.561" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:17.548" endtime="20220628 01:32:18.561"/>
+<msg timestamp="20220629 15:26:23.292" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:22.279" endtime="20220629 15:26:23.292"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:18.561" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:18.561" endtime="20220628 01:32:18.609"/>
+<msg timestamp="20220629 15:26:23.293" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:23.292" endtime="20220629 15:26:23.338"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:17.143" endtime="20220628 01:32:18.609"/>
+<status status="PASS" starttime="20220629 15:26:21.830" endtime="20220629 15:26:23.338"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="bab45bba-e5e9-402d-851d-e8ffc8ffd033")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="243dd8dd-e24d-47ea-a684-541ca6b4a053")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:18.610" endtime="20220628 01:32:18.889"/>
+<status status="PASS" starttime="20220629 15:26:23.338" endtime="20220629 15:26:23.605"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:18.890" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="bab45bba-e5e9-402d-851d-e8ffc8ffd033")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:18.889" endtime="20220628 01:32:19.014"/>
+<msg timestamp="20220629 15:26:23.605" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="243dd8dd-e24d-47ea-a684-541ca6b4a053")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:23.605" endtime="20220629 15:26:23.775"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:20.024" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:19.015" endtime="20220628 01:32:20.024"/>
+<msg timestamp="20220629 15:26:24.788" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:23.775" endtime="20220629 15:26:24.788"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:20.025" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:20.024" endtime="20220628 01:32:20.091"/>
+<msg timestamp="20220629 15:26:24.788" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:24.788" endtime="20220629 15:26:24.836"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:18.609" endtime="20220628 01:32:20.091"/>
+<status status="PASS" starttime="20220629 15:26:23.338" endtime="20220629 15:26:24.836"/>
 </iter>
 <iter>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="7bdb0964-f26f-4e8a-a8b0-0fa134b8100b")&gt;</var>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="8229477b-d76a-4c12-9bf1-983d050ba097")&gt;</var>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220628 01:32:20.092" endtime="20220628 01:32:20.368"/>
+<status status="PASS" starttime="20220629 15:26:24.836" endtime="20220629 15:26:25.104"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:20.368" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e09eea4e9f82c442b88b4b90b0767a78", element="7bdb0964-f26f-4e8a-a8b0-0fa134b8100b")&gt;'.</msg>
-<status status="PASS" starttime="20220628 01:32:20.368" endtime="20220628 01:32:20.494"/>
+<msg timestamp="20220629 15:26:25.105" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6b6fcdabae6363dec2386ba384d7a068", element="8229477b-d76a-4c12-9bf1-983d050ba097")&gt;'.</msg>
+<status status="PASS" starttime="20220629 15:26:25.104" endtime="20220629 15:26:25.278"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220628 01:32:21.501" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220628 01:32:20.494" endtime="20220628 01:32:21.501"/>
+<msg timestamp="20220629 15:26:26.290" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220629 15:26:25.278" endtime="20220629 15:26:26.290"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${FANCY_CLOSE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220628 01:32:21.502" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
-<status status="PASS" starttime="20220628 01:32:21.501" endtime="20220628 01:32:21.548"/>
+<msg timestamp="20220629 15:26:26.290" level="INFO">Clicking button '//button[contains(@class, 'fancybox-button--close')]'.</msg>
+<status status="PASS" starttime="20220629 15:26:26.290" endtime="20220629 15:26:26.335"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:20.092" endtime="20220628 01:32:21.548"/>
+<status status="PASS" starttime="20220629 15:26:24.836" endtime="20220629 15:26:26.336"/>
 </iter>
-<status status="PASS" starttime="20220628 01:31:54.387" endtime="20220628 01:32:21.548"/>
+<status status="PASS" starttime="20220629 15:25:59.151" endtime="20220629 15:26:26.336"/>
 </for>
-<status status="PASS" starttime="20220628 01:31:54.378" endtime="20220628 01:32:21.548"/>
+<status status="PASS" starttime="20220629 15:25:59.141" endtime="20220629 15:26:26.336"/>
 </kw>
-<status status="PASS" starttime="20220628 01:31:54.378" endtime="20220628 01:32:21.548"/>
+<status status="PASS" starttime="20220629 15:25:59.141" endtime="20220629 15:26:26.336"/>
 </kw>
-<status status="PASS" starttime="20220628 01:31:50.931" endtime="20220628 01:32:21.548"/>
+<status status="PASS" starttime="20220629 15:25:54.230" endtime="20220629 15:26:26.336"/>
 </kw>
 <kw name="End FaustX Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220628 01:32:21.549" endtime="20220628 01:32:23.681"/>
+<status status="PASS" starttime="20220629 15:26:26.337" endtime="20220629 15:26:28.468"/>
 </kw>
-<status status="PASS" starttime="20220628 01:32:21.549" endtime="20220628 01:32:23.681"/>
+<status status="PASS" starttime="20220629 15:26:26.336" endtime="20220629 15:26:28.468"/>
 </kw>
 <doc>User should be able click and see all FX1 Test Images/page</doc>
 <tag>FX-M09</tag>
 <tag>FX1 Test Page</tag>
 <tag>Smoke</tag>
-<status status="PASS" starttime="20220628 01:31:46.963" endtime="20220628 01:32:23.682"/>
+<status status="PASS" starttime="20220629 15:25:49.404" endtime="20220629 15:26:28.469"/>
 </test>
 <doc>FaustX's Official Website Test Cases, Test numbers are indicated with FX-M0* tags.</doc>
-<status status="PASS" starttime="20220628 01:31:46.733" endtime="20220628 01:32:23.683"/>
+<status status="PASS" starttime="20220629 15:24:04.088" endtime="20220629 15:26:28.470"/>
 </suite>
-<status status="PASS" starttime="20220628 01:31:46.715" endtime="20220628 01:32:23.685"/>
+<status status="PASS" starttime="20220629 15:24:04.063" endtime="20220629 15:26:28.472"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">Contact Form</stat>
+<stat pass="1" fail="0" skip="0">Documents Page</stat>
+<stat pass="1" fail="0" skip="0">Enter Site</stat>
+<stat pass="1" fail="0" skip="0">Footer Area</stat>
+<stat pass="1" fail="0" skip="0">FX-M01</stat>
+<stat pass="1" fail="0" skip="0">FX-M02</stat>
+<stat pass="1" fail="0" skip="0">FX-M03</stat>
+<stat pass="1" fail="0" skip="0">FX-M04</stat>
+<stat pass="1" fail="0" skip="0">FX-M05</stat>
+<stat pass="1" fail="0" skip="0">FX-M06</stat>
+<stat pass="1" fail="0" skip="0">FX-M07</stat>
+<stat pass="1" fail="0" skip="0">FX-M08</stat>
 <stat pass="1" fail="0" skip="0">FX-M09</stat>
 <stat pass="1" fail="0" skip="0">FX1 Test Page</stat>
-<stat pass="1" fail="0" skip="0">Smoke</stat>
+<stat pass="3" fail="0" skip="0">Homepage</stat>
+<stat pass="1" fail="0" skip="0">Main Slider</stat>
+<stat pass="1" fail="0" skip="0">Navbar Dropdown Menus</stat>
+<stat pass="1" fail="0" skip="0">Our Vision Page</stat>
+<stat pass="2" fail="0" skip="0">Regression</stat>
+<stat pass="7" fail="0" skip="0">Smoke</stat>
+<stat pass="1" fail="0" skip="0">Sub Slider</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Faustx">Tests.Faustx</stat>
+<stat pass="9" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="9" fail="0" skip="0" id="s1-s1" name="Faustx">Tests.Faustx</stat>
 </suite>
 </statistics>
 <errors>
